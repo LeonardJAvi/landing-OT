@@ -1,0 +1,101 @@
+menu:
+  dashboard:
+    name: dashboard
+    url_path: /admin/dashboard
+    icon: dashboard
+    current: ['keppler_ga_dashboard/dashboard']
+  seo:
+    name: SEO
+    current: ['admin/meta_tags', 'admin/google_adwords']
+    icon: trending_up
+    model: MetaTag
+    submenu:
+      - meta_tags:
+          name: 'Title & Metas'
+          url_path: /admin/meta_tags
+          current: ['admin/meta_tags']
+      - google_adwords:
+          name: Google Adwords
+          url_path: /admin/google_adwords
+          current: ['admin/google_adwords']
+  script:
+    name: Scripts
+    url_path: /admin/scripts
+    icon: settings_ethernet
+    current: ['admin/scripts']
+    model: Script
+  destination:
+    name: destinations
+    url_path: /admin/destinations
+    icon: flight_takeoff
+    current: ['admin/destinations']
+    model: Destination
+  # hotel:
+  #   name: hotels
+  #   url_path: /admin/hotels
+  #   icon: help_outline
+  #   current: ['admin/hotels']
+  #   model: Hotel
+  # plan:
+  #   name: plans
+  #   url_path: /admin/plans
+  #   icon: help_outline
+  #   current: ['admin/plans']
+  #   model: Plan
+  # excursion:
+  #   name: excursions
+  #   url_path: /admin/excursions
+  #   icon: help_outline
+  #   current: ['admin/excursions']
+  #   model: Excursion
+  user:
+    name: users
+    url_path: /admin/users
+    icon: account_circle
+    current: ["admin/users"]
+  # customize:
+  #   name: keppler design
+  #   icon: color_lens
+  #   current: ['admin/customizes']
+  #   model: Customize
+  #   submenu:
+  #     - customize:
+  #         name: frontend templates
+  #         url_path: /admin/customizes
+  #         current: ['admin/customizes']
+  #     - appearance:
+  #         name: admin appearance
+  #         url_path: /admin/settings/appearance
+  #         current: ['appearance']
+  # development:
+  #   name: Development
+  #   current: ['admin/scaffolds']
+  #   icon: code
+  #   model: Scaffold
+  #   submenu:
+  #     - scaffolds:
+  #         name: Keppler scaffolds
+  #         url_path: /admin/scaffolds
+  #         current: ['/admin/scaffolds']
+  setting:
+    name: setting
+    current: ['admin/settings']
+    icon: settings
+    model: Setting
+    submenu:
+      - basic_information:
+          name: Basic information
+          url_path: /admin/settings/basic_information
+          current: ['basic_information']
+      - smtp_setting:
+          name: Email setting (SMTP)
+          url_path: /admin/settings/email_setting
+          current: ['email_setting']
+      - google_analytics_setting:
+          name: Google analytics
+          url_path: /admin/settings/google_analytics_setting
+          current: ['google_analytics_setting']
+      - social_account:
+          name: Social Accounts
+          url_path: /admin/settings/social_accounts
+          current: ['social_accounts']

@@ -1,0 +1,47 @@
+%tr{ id: "row-#{plan.id}" }
+	- if can? :destroy_multiple, Hotel
+		%td.center.item-check{ width: 60 }
+			= link_to '', admin_destination_plan_path(@destination, plan), remote: true, class: 'show-row'
+			%input{ type:'checkbox', class: 'filled-in', id: "checkbox-#{plan.id}", 'checklist-model'=>'check', 'checklist-value'=>"#{plan.id}", 'ng-click'=>"selectByCheck(#{@objects.size})"}
+			%label{ for: "checkbox-#{plan.id}" }
+
+	%td.center
+		= link_to '', admin_destination_plan_path(@destination, plan, search: @query), remote: true, class: 'show-row'
+		%span
+			= image_tag plan.banner
+	%td.center
+		= link_to '', admin_destination_plan_path(@destination, plan, search: @query), remote: true, class: 'show-row'
+		%span
+			= plan.title
+	%td.center.hide-on-small-and-down
+		= link_to '', admin_destination_plan_path(@destination, plan, search: @query), remote: true, class: 'show-row'
+		%span
+			= plan.days
+	%td.center.hide-on-small-and-down
+		= link_to '', admin_destination_plan_path(@destination, plan, search: @query), remote: true, class: 'show-row'
+		%span
+			= plan.url
+	%td.center.hide-on-small-and-down
+		= link_to '', admin_destination_plan_path(@destination, plan, search: @query), remote: true, class: 'show-row'
+		%span
+			= plan.destination_id
+
+	- if can? :show, Hotel
+		%td.center.btn-w5
+			= link_to admin_destination_plan_path(@destination, plan), class: 'btn-floating waves-effect btn-flat tooltipped', title: t('keppler.actions.show') do
+				= material_icon.md_24.remove_red_eye.css_class('md-dark')
+
+	- if can? :update, Hotel
+		%td.center.btn-w5
+			= link_to edit_admin_destination_plan_path(@destination, plan), class: 'btn-floating waves-effect btn-flat tooltipped', title: t('keppler.actions.edit') do
+				= material_icon.md_18.create.css_class('md-dark')
+
+	- if can? :clone, Hotel
+		%td.center.btn-w5
+			= link_to admin_destination_plan_clone_path(@destination, plan), class: 'btn-floating waves-effect btn-flat tooltipped', title: t('keppler.actions.clone') do
+				= material_icon.md_24.content_copy.css_class('md-dark')
+
+	- if can? :delete, Hotel
+		%td.center.btn-w5
+			= link_to admin_destination_plan_path(@destination, plan), class: 'btn-floating waves-effect btn-flat tooltipped', title: t('keppler.actions.delete'), method: :delete, data: { confirm: t('keppler.messages.data_confirm') } do
+				= material_icon.md_18.delete.css_class('md-dark')

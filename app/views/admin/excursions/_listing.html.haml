@@ -1,0 +1,47 @@
+%tr{ id: "row-#{excursion.id}" }
+	- if can? :destroy_multiple, Excursion
+		%td.center.item-check{ width: 60 }
+			= link_to '', admin_destination_excursion_path(@destination, excursion), remote: true, class: 'show-row'
+			%input{ type:'checkbox', class: 'filled-in', id: "checkbox-#{excursion.id}", 'checklist-model'=>'check', 'checklist-value'=>"#{excursion.id}", 'ng-click'=>"selectByCheck(#{@objects.size})"}
+			%label{ for: "checkbox-#{excursion.id}" }
+
+	%td.center
+		= link_to '', admin_destination_excursion_path(@destination, excursion, search: @query), remote: true, class: 'show-row'
+		%span
+			= image_tag excursion.banner
+	%td.center
+		= link_to '', admin_destination_excursion_path(@destination, excursion, search: @query), remote: true, class: 'show-row'
+		%span
+			= excursion.title
+	%td.center.hide-on-small-and-down
+		= link_to '', admin_destination_excursion_path(@destination, excursion, search: @query), remote: true, class: 'show-row'
+		%span
+			= excursion.days
+	%td.center.hide-on-small-and-down
+		= link_to '', admin_destination_excursion_path(@destination, excursion, search: @query), remote: true, class: 'show-row'
+		%span
+			= excursion.url
+	%td.center.hide-on-small-and-down
+		= link_to '', admin_destination_excursion_path(@destination, excursion, search: @query), remote: true, class: 'show-row'
+		%span
+			= excursion.destination_id
+
+	- if can? :show, Excursion
+		%td.center.btn-w5
+			= link_to admin_destination_excursion_path(@destination, excursion), class: 'btn-floating waves-effect btn-flat tooltipped', title: t('keppler.actions.show') do
+				= material_icon.md_24.remove_red_eye.css_class('md-dark')
+
+	- if can? :update, Excursion
+		%td.center.btn-w5
+			= link_to edit_admin_destination_excursion_path(@destination, excursion), class: 'btn-floating waves-effect btn-flat tooltipped', title: t('keppler.actions.edit') do
+				= material_icon.md_18.create.css_class('md-dark')
+
+	- if can? :clone, Excursion
+		%td.center.btn-w5
+			= link_to admin_destination_excursion_clone_path(@destination, excursion), class: 'btn-floating waves-effect btn-flat tooltipped', title: t('keppler.actions.clone') do
+				= material_icon.md_24.content_copy.css_class('md-dark')
+
+	- if can? :delete, Excursion
+		%td.center.btn-w5
+			= link_to admin_destination_excursion_path(@destination, excursion), class: 'btn-floating waves-effect btn-flat tooltipped', title: t('keppler.actions.delete'), method: :delete, data: { confirm: t('keppler.messages.data_confirm') } do
+				= material_icon.md_18.delete.css_class('md-dark')

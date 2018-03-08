@@ -1,0 +1,2968 @@
+﻿/* INICIO LANDING EXCURSIONES */
+    .text-pre-excursiones {
+        text-align: center;
+        font-size: 32px;
+        font-weight: bold;
+        color: #15a656;
+        position: relative;
+        top: -32px;
+        line-height: 30px;
+    }
+
+
+
+    .excursiones-icon-text img {
+      position: relative;
+      width: 30px;
+      top: -5px;
+    }
+
+    .excursiones-icon-text p {
+    color: #636361;
+    font-weight: bold;
+    line-height: 7px;
+    text-align: left;
+    padding-left: 25px;
+    }
+
+    .card-excursiones {
+      margin-bottom: 30px;
+      -webkit-box-shadow: -8px 14px 23px -5px rgba(189,187,189,1);
+      -moz-box-shadow: -8px 14px 23px -5px rgba(189,187,189,1);
+      box-shadow: -8px 14px 23px -5px rgba(189,187,189,1);
+    }
+
+
+    .card-excursiones img {
+      width: 100%;
+      border-radius: 15px 15px 0 0;
+    }
+
+    .info-card {
+      padding: 0 15px;
+    }
+
+    .info-card-title {
+      font-weight: bold;
+      color: #12aa56;
+      margin-top: 10px;
+      font-size: 24px;
+    }
+
+    .info-card-days {
+      color: #12aa56;
+      font-size: 16px;
+    }
+
+    .info-card-content {
+      text-align: left;
+      font-size: 14px;
+    }
+
+    .info-card-reservas {
+      text-align: right;
+    }
+
+    .reservation-buttons {
+      display: none;
+    }
+
+    .card-excursiones .fa-chevron-down {
+      margin-right: 5px;
+      font-size: 14px;
+    }
+
+    .divisor-button-reservations {
+      border-top: 1px solid rgba(99, 99, 97, 0.32);
+      height: 1px;
+      width: 100%;
+      margin-bottom: 15px;
+    }
+
+    .reservation-buttons .fa-chevron-up {
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+
+    .card-excursiones:hover .reservation-buttons {
+      display: initial;
+    }
+
+    .card-excursiones:hover .fa-chevron-down:before {
+      content: "\f077"
+    }
+
+    .reservation-buttons-mes {
+      font-weight: bold;
+      margin-bottom: 0px;
+      font-size: 13px;
+    }
+
+    .button-reserva-excursiones {
+      float: right;
+      color: #fbcf0a;
+      border: 1px solid #e6b90c;
+      padding: 4px 10px;
+      border-radius: 5px;
+    }
+
+    .button-reserva-excursiones:hover {
+      background-color: #e6b90c; 
+      color: white;
+    }
+/* FIN LANDING EXCURSIONES */
+
+body > form #ControlBar_ControlPanel {
+    z-index: 10000000000000001 !important;
+}
+
+#promo_code_toggle_netactica_extra, #promo_code_toggle_netactica_hotel, #promo_code_toggle_netactica_air, #promo_code_toggle_netactica_air_hotel {
+    display: block !important;
+    cursor: pointer; 
+}
+
+.DnnModule-45107, .DnnModule-33754, .DnnModule-33578, .DnnModule-70060, .DnnModule-70063, .DnnModule-70183, .DnnModule-70062, .DnnModule-85060 {
+    display: none !important; 
+}
+
+.mce_inline_error {
+    color: red;
+}
+
+.clear {
+    clear: both;
+    display: block;
+    overflow: hidden;
+    visibility: initial;
+    width: 100%;
+    height: auto;
+}
+
+.mailchip {
+    padding-top: 20px;
+}
+
+.response {
+    text-align: center;
+    color: #fbcf0a;
+    font-size: 16px;
+}
+
+#promo_code_toggle_netactica_air_hotel {
+    height: 1px;
+}
+
+#arrow_promo_code_netactica_air_hotel {
+        position: relative;
+    top: 20px;
+    left: -26px;
+}
+
+#dnn_ctr38094_View_lblAirHotelTogglePromoCode {
+        position: relative;
+    top: 20px;
+    left: -25px;
+        width: 205px;
+}
+
+#dnn_ctr38094_View_txtAirPromoCode {
+    position: relative;
+    left: -17px;
+}
+
+#dnn_ctr38094_View_lblAirHotelTogglePromoCode, #arrow_promo_code_netactica_air_hotel {
+    position: relative;
+    top: 20px;
+}
+
+#dnn_ctr38094_View_txtAirHotelPromoCode {
+    position: relative;
+    left: -28px;
+    top: 20px;
+    width: 200px;
+}
+
+.Omnitours .divHotelInfoRoom2 {
+    display: block;
+    margin-bottom: 8px;
+    width: 40%;
+    float: left;
+    clear: both;
+    margin-left: 0;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.Omnitours .divHotelInfoRoom3 {
+    display: block;
+    margin-bottom: 8px;
+    width: 40%;
+    float: left;
+    clear: both;
+    margin-left: 0;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.img-info-banners {
+    width: 70%;
+    margin: 0 15%;
+    top: 15px;
+    position: absolute;
+}
+
+/* adjust body when menu is open */
+
+body.slide-active {
+    overflow-x: hidden
+}
+/*first child of #page-content so it doesn't shift around*/
+
+.no-margin-top {
+    margin-top: 0px!important
+}
+/*wrap the entire page content but not nav inside this div if not a fixed top, don't add any top padding */
+
+#page-content {
+    position: relative;
+    padding-top: 70px;
+    right: 0;
+}
+#page-content.slide-active {
+    padding-top: 0
+}
+/* put toggle bars on the left :: not using button */
+
+#slide-nav .navbar-toggle {
+    cursor: pointer;
+    position: relative;
+    line-height: 0;
+    float: right;
+    margin: 0;
+    width: 30px;
+    height: 40px;
+    padding: 10px 0 0 0;
+    border: 0;
+    background: transparent;
+}
+/* icon bar prettyup - optional */
+
+#slide-nav .navbar-toggle > .icon-bar {
+    width: 100%;
+    display: block;
+    height: 3px;
+    margin: 5px 0 0 0;
+}
+#slide-nav .navbar-toggle.slide-active .icon-bar {
+    background: orange
+}
+.navbar-header {
+    position: relative
+}
+
+.dropdown {
+    border-left: 1px solid #4d4d4d;
+}
+
+.position-post-excursiones {
+    margin-top: 70px;
+}
+
+.excursiones-icon-text .col-xs-6 {
+  padding-right: 0;
+}
+
+
+/* un fix the navbar when active so that all the menu items are accessible */
+
+.navbar.navbar-fixed-top.slide-active {
+    position: relative
+}
+/* screw writing importants and shit, just stick it in max width since these classes are not shared between sizes */
+
+@media (max-width: 767px) {
+  .position-post-excursiones {
+    margin-top: 70px;
+  }
+
+  .excursiones-icon-text img {
+    position: relative;
+    left: -8px;
+    width: 15px;
+    top: -5px;
+}
+    .excursiones-icon-text p {
+      font-size: 10px;
+    }
+
+    .text-pre-excursiones {
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: #15a656;
+    position: relative;
+    top: -13px;
+    line-height: 30px;
+}
+
+    #slide-nav .navbar-header {
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+    #slide-nav .navbar.slide-active {
+        position: absolute;
+        width: 80%;
+        top: -1px;
+        z-index: 1000;
+    }
+    #slide-nav #slidemenu {
+        background: #f7f7f7;
+        right: -100%;
+        width: 80%;
+        min-width: 0;
+        position: absolute;
+        padding-left: 0;
+        z-index: 2;
+        top: 0px;
+        margin: 0;
+    }
+    #slide-nav #slidemenu .navbar-nav {
+        min-width: 0;
+        width: 100%;
+        margin: 0;
+    }
+    #slide-nav #slidemenu .navbar-nav .dropdown-menu li a {
+        min-width: 0;
+        width: 80%;
+        white-space: normal;
+    }
+    #slide-nav {
+        border-top: 0
+    }
+    #slide-nav.navbar-inverse #slidemenu {
+        background: #333
+    }
+    /* this is behind the navigation but the navigation is not inside it so that the navigation is accessible and scrolls*/
+    
+    #navbar-height-col {
+        position: fixed;
+        top: 0;
+        height: 100%;
+        bottom: 0;
+        width: 80%;
+        right: -80%;
+        background: #f7f7f7;
+    }
+    #navbar-height-col.inverse {
+        background: #12a655;
+        z-index: 10;
+        border: 0;
+    }
+    #slide-nav.navbar-inverse #slidemenu {
+        background: #12a655;
+    }
+    #slidemenu ul li {
+        width: 100%;
+    }
+    .navbar-inverse .navbar-nav>li>a {
+        color: white;
+    }
+    #slide-nav .navbar-form {
+        width: 100%;
+        margin: 8px 0;
+        text-align: center;
+        overflow: hidden;
+        /*fast clearfixer*/
+    }
+    #slide-nav .navbar-form .form-control {
+        text-align: center
+    }
+    #slide-nav .navbar-form .btn {
+        width: 100%
+    }
+}
+@media (min-width: 768px) {
+    #page-content {
+        left: 0!important
+    }
+    .navbar.navbar-fixed-top.slide-active {
+        position: fixed
+    }
+    .navbar-header {
+        left: 0!important
+    }
+}
+.carousel-fade .carousel-inner .item {
+    opacity: 0;
+    -webkit-transition-property: opacity;
+    -moz-transition-property: opacity;
+    -o-transition-property: opacity;
+    transition-property: opacity;
+}
+.carousel-fade .carousel-inner .active {
+    opacity: 1;
+}
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+    left: 0;
+    opacity: 0;
+    z-index: 1;
+}
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+    opacity: 1;
+}
+.carousel-fade .carousel-control {
+    z-index: 2;
+}
+.carousel-control.left,
+.carousel-control.right {
+    background-image: none !important;
+    opacity: 0.8;
+}
+.carousel-control.left:hover,
+.carousel-control.right:hover {
+    opacity: 1;
+}
+.carousel-control {
+    width: 75px;
+}
+.icon-svg {
+    width: 21px;
+    position: relative;
+    top: -2px;
+}
+.backgroun-mas-buscado {
+    height: 100px;
+    background-size: cover;
+}
+/* MODAL */
+/* ===== Setting ====== */
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+/* ===== Setting ====== */
+
+#
+ {
+    height: 100%;
+    width: 100%;
+    background: #15A656;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#box-wallpaper {
+    width: 100%;
+    height: 190px;
+}
+.fix {
+    padding: 0px !important;
+}
+#box-wallpaper img {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+#box-informatiodn {
+    width: 100%;
+    height: 220px;
+    background: #FBCF0A;
+}
+#close {
+    width: 40px;
+    height: 40px;
+    background: #f2f507;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.fa-2x {
+    font-size: 1.2em !important;
+    color: #12a655 !important;
+}
+span#close {
+    cursor: pointer;
+}
+#wallpaper {
+    height: 100%;
+    width: 100%;
+    background-image: url(https://www.omnitours.com.co/portals/159/Skins/omnitours-redesign/Images/modal/wallpaper.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 70% center;
+}
+#box-information {
+    height: 220px;
+    width: 100%;
+    background-image: url(https://www.omnitours.com.co/portals/159/Skins/omnitours-redesign/Images/modal/patron.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 70% center;
+    position: relative;
+}
+#card {
+    height: 240px;
+    width: 100%;
+    background: #a23d91;
+    position: relative;
+    top: -20px;
+    padding: 20px;
+    box-shadow: 1px 1px 20px 0px;
+    text-align: center;
+}
+.button-card {
+    height: 40px;
+    width: 100%;
+    color: white;
+    background: red;
+    font-size: 16px;
+    font-weight: 600;
+    padding-top: 10px;
+    outline: 0 !important;
+    position: relative;
+    top: 12px;
+}
+span.title {
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 2px;
+}
+#sub-a {
+    margin: 35px 0px;
+}
+#sub-b {
+    font-weight: bold;
+    font-size: 16px;
+}
+#sub-c {
+    font-weight: bold;
+    font-size: 16px;
+    padding: 10px;
+}
+span.sub-title {
+    color: white;
+    font-size: 16px;
+    margin: 10px 0px 0px 0px;
+    font-weight: 700;
+    line-height: 2px;
+    display: block;
+}
+#frame {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    padding: 0px 30px;
+}
+.modal-dialog {
+    width: 300px !important;
+    margin: 30px auto !important;
+}
+#card-information {
+    height: 120px;
+    width: 100%;
+    background: red;
+}
+/* END MODAL */
+
+.navbar .nav > li > .dropdown-menu:after {
+    position: absolute!important;
+    top: -15px!important;
+    left: 20px!important;
+    content: ''!important;
+    width: 0px!important;
+    height: 0px!important;
+    border-left: 0px solid transparent !important;
+    border-right: 0px solid transparent !important;
+    border-bottom: 15px solid #F5F7F7!important;
+    font-size: 0px!important;
+    line-height: 0px!important;
+}
+/** ESTILOS PARA TODOS LOS WIDGET HOME VIDEO **/
+
+.widgetPane {
+    width: 1000px;
+    border-radius: 10px 10px 0 0;
+}
+#dnn_ctr38094_View_pnlExtraNormalView {
+    width: 100%;
+}
+.Omnitours .fdsAirTripType {
+    width: 100%;
+}
+#tabs38094 {
+    background: rgba(99, 99, 97, 0.95);
+    padding: 0;
+    height: 215px;
+}
+#pnl38094Netactica1 {
+    margin-top: 0;
+    width: 100%;
+    position: relative;
+    top: -18px;
+    margin: 0 80px;
+}
+#pnl38094Netactica2 {
+    margin-top: 0;
+    margin-right: 90px;
+    margin-left: 90px;
+    position: relative;
+    top: -3px;
+    left: 21px;
+}
+#pnl38094Netactica5 {
+    top: 7px;
+    position: relative;
+    margin-top: 0;
+    margin-left: 13%;
+    margin-right: 13%;
+}
+#pnl38094Netactica6 {
+    margin-top: 0;
+    position: relative;
+    top: -15px;
+    margin: 0 80px;
+}
+.Omnitours .divAirCityFrom {
+    display: inline;
+    float: left;
+    margin-bottom: 0;
+    margin-top: 0;
+    width: 20%;
+}
+.Omnitours .divAirDatesFrom {
+    display: inline;
+    float: left;
+    margin-bottom: 0;
+    margin-left: 15px;
+    margin-top: 0;
+    width: 20%;
+}
+.Omnitours .divAirCityTo {
+    display: inline;
+    float: left;
+    margin-bottom: 0;
+    margin-top: 0;
+    width: 20%;
+    margin-left: 15px;
+}
+.Omnitours .divAirDatesTo {
+    display: inline;
+    float: left;
+    margin-bottom: 0;
+    margin-left: 15px;
+    margin-top: 0;
+    width: 20%;
+}
+.Omnitours .ddlAirNumberAdults,
+.Omnitours .ddlAirNumberChildrens,
+.Omnitours .ddlAirNumberInfants {
+    background-color: #f7f7f7;
+    border: 1px solid #ccc;
+    font-size: 12px !important;
+    height: 25px;
+    margin-left: 12px;
+    margin-right: 10px;
+    padding: 0 !important;
+    width: 40px;
+}
+.hide-ecard {
+    display: none;
+}
+.show-ecard {
+    display: block;
+}
+#dnn_ctr38094_ContentPane {
+    height: 220px;
+}
+.Omnitours input[type="text"],
+.Omnitours select {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #fee852;
+    border-radius: 0;
+    color: white;
+}
+
+.Omnitours .ui-widget input,
+.Omnitours .ui-widget textarea {
+    background: transparent;
+    color: white;
+    border: none;
+    border-bottom: 1px solid #fee852;
+}
+
+.Omnitours .ui-widget select {
+    background: rgba(99, 99, 97, 0.95);
+    border: none;
+    color: white;
+    border-bottom: 1px solid #fee852;
+}
+
+#ctr73400434362ViewtxtExtraPromoCode {
+    position: absolute;
+    top: 25px;
+    left: 3px;
+    display: none;
+
+}
+
+#button-planes {
+       top: 24px;
+    position: absolute;
+    left: -210px; 
+}
+
+#button-plan-intermedias {
+    position: relative;
+    top: 30px;
+}
+
+#destino, #multidestino, .label-detinos, .label-detinos {
+    position: relative;
+    top: -5px;
+}
+
+.padding-col-medium {
+    text-align: center;
+    color: white;
+}
+
+.border-divisr p {
+    color: white;
+}
+
+.Omnitours .ui-widget option:not(:checked) {
+    color: white;
+}
+.Omnitours .ui-widget option(:checked) {
+    color: black !important;
+}
+
+.border-divisr {
+ border-right: 1px #d6d6d6 solid;
+}
+
+.Omnitours .ui-tabs .ui-tabs-panel {
+    background-image: none;
+    border: none !important;
+}
+#netactica_tabs38094_links {
+    position: relative;
+    top: -38px;
+}
+.fullscreen-bg__video {
+    width: 100%;
+}
+
+.Omnitours .hplAddFlight {
+    height: 23px;
+    background: url(https://www.omnitours.com.co/portals/159/Skins/omnitours-redesign/Images/nuevo-home/ic_mas.png) no-repeat;
+    padding: 0 0px 0px 18px;
+    width: 0;
+    margin: 6px 0px;
+    cursor: pointer;
+    display: block;
+    margin-top: 14px;
+    background-size: contain;
+    background-position-x: 0px;
+}
+
+.dropdown .dropdown-menu{
+    display: block;
+    opacity: 0;
+
+    -moz-transition:    all 500ms ease;
+    -webkit-transition: all 500ms ease;
+    -o-transition:      all 500ms ease;
+    -ms-transition:     all 500ms ease;
+    transition:         all 500ms ease;
+}
+.dropdown:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+}
+
+.Omnitours .hplDelFlight {
+    display: block;
+    height: 25px;
+    background: url(https://www.omnitours.com.co/portals/159/Skins/omnitours-redesign/Images/nuevo-home/ic_eliminar.png) no-repeat;
+    padding: 0 0 0 16px;
+    /* margin: 8px 0 0 284px; */
+    position: absolute;
+    width: 45px;
+    cursor: pointer;
+    background-size: contain;
+}
+    .row-34523 {
+        position: relative;
+        top: -18px;
+    }
+    .ddlExtraCity{
+        margin-top: 5px;
+    }
+.navbar-default {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-color: transparent;
+    -webkit-transition: background-color 200ms linear;
+    -ms-transition: background-color 200ms linear;
+    transition: background-color 200ms linear;
+}
+
+.Omnitours .btnSearch {
+    background-color: #fbcf0a !important;
+    width: 200px !important;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bold;
+}
+#bs-example-navbar-collapse-1 {
+    float: right;
+}
+.navbar-default .navbar-nav>li>a {
+    color: #4d4d4d;
+    font-weight: initial;
+}
+.navbar-default .navbar-nav>li>a:focus,
+.navbar-default .navbar-nav>li>a:hover {
+    color: #13a655;
+    background-color: transparent;
+}
+.nav > li > a,
+.nav > li > span {
+    padding: 25px 10px;
+}
+#promo-343 {
+position: absolute;
+    width: 100%;
+    right: -220px;
+    top: 5px;
+    cursor: pointer;
+}
+
+#arrow_promo_code_netactica_hotel {
+position: relative;
+    top: 17px;
+    left: -34px;
+}
+
+#arrow_promo_code_netactica_hotel2 {
+position: relative;
+    top: 5px;
+    left: 198px;
+}
+
+#dnn_ctr38094_View_lblHotelTogglePromoCode {
+    position: relative;
+    left: -35px;
+    top: 17px;
+}
+#dnn_ctr38094_View_txtHotelPromoCode {
+    position: relative;
+    top: 5px;
+}
+.Omnitours .ui-tabs .ui-tabs-nav {
+    /* background-image: url(images/fondo.png); */
+    
+    border-radius: 0;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    margin: 0;
+    width: 700px;
+    /* box-shadow: -12px -18px 8px -14px; */
+}
+.Omnitours .ui-tabs .ui-tabs-nav {
+    width: 103%;
+    left: 0px;
+}
+#ctr7340062ViewtxtExtraPromoCode {
+    margin-top: 38px;
+}
+.border-divisr {
+    text-align: center;
+}
+.row-34523 select {
+    height: 30px !important;
+}
+.row-34523 img {
+    width: 150px;
+    margin-top: 10px;
+}
+.boton-plan-vacacional2, .boton-plan-vacacional1 {
+    text-align: center;
+    cursor: pointer;
+}
+.margin-plan {
+    margin-top: 25px;
+}
+body .ui-corner-all {
+    border-radius: 0px 0 5px 5px;
+}
+.Omnitours .ui-tabs .ui-tabs-nav li {
+    margin-right: 21.5px;
+    padding: 7px 16px 8px 5px;
+    background-color: #7b7b7a;
+}
+.Omnitours .ui-tabs .ui-tabs-nav li.ui-tabs-active {
+    background-color: #fbcf0a !important;
+}
+.Omnitours .ui-tabs .ui-tabs-nav li:hover {
+    background-color: #fbcf0a !important;
+}
+#netactica_tabs38094_links td {
+    color: white;
+    font-size: 20px;
+}
+.sliderWigetWrapp {
+    top: 0;
+}
+.widgetPaneWrapper {
+    position: absolute;
+    top: -115px;
+    width: 100%;
+}
+#dnn_ctr38094_View_ddlAirHotelNumberRooms {
+    top: 7px;
+    position: relative;
+    z-index: 1000000;
+}
+.ddlAirHotelNumberRooms,
+#dnn_ctr38094_View_ddlAirHotelNumberAdults1,
+#dnn_ctr38094_View_ddlAirHotelNumberChildrens1 {
+    width: 40px !important;
+    margin-right: 10px;
+    margin-left: 5px;
+}
+#dnn_ctr38094_View_lblAirHotelRooms {
+    margin-top: 10px;
+}
+.widgetPaneWrapper label {
+    color: white !important;
+}
+.widgetPaneWrapper span {
+    color: white !important;
+    opacity: 1;
+}
+/* esta parte edita la posicion de algunos elementos del widget dado que netactica coloco campos y saltos de linea que dañan el diseño */
+
+.Omnitours .divHotelInfoRoom1,
+.Omnitours .divAirHotelInfoRoom1 {
+    top: -16px;
+    position: relative;
+}
+#dnn_ctr38094_View_fdsExtraTypes,
+.lblAirHotelRoomsInfo1 {
+    display: none;
+}
+#dnn_ctr38094_View_btnSearchExtra {
+    float: initial !important;
+    margin-top: 21px;
+}
+/**
+.netactica_air_tab38094_widget {
+  top: -208px;
+}
+
+.netactica_hotel_tab38094_widget {
+  top: -183px;
+}
+
+.netactica_extras_tab38094_widget {
+  top: -141px;
+}
+
+.netactica_airhotel_tab38094_widget {
+  top: -190px;
+}
+
+**/
+
+.Omnitours .divExtraDateFrom input {
+    display: inline-block;
+    width: 190px !important;
+}
+.Omnitours .divExtraDateTo {
+    float: left;
+    width: 215px;
+    display: inline;
+}
+#dnn_ctr38094_View_txtExtraDateTo {
+    width: 190px !important;
+}
+#dnn_ctr38094_View_lblExtraAndOperator {
+    display: inline-block;
+}
+/* esta parte edita la posicion de algunos elementos del widget dado que netactica coloco campos y saltos de linea que dañan el diseño */
+
+.widgetPaneWrapper select {
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+.Omnitours .fdsHotelDetails {
+    margin-top: 35px;
+    width: 40%;
+    float: left;
+}
+#dnn_ctr38094_View_txtHotelPromoCode {
+    width: 100%;
+}
+.Omnitours .fdsHotelDates {
+    width: 520px;
+}
+.Omnitours .fdsHotelDestination {
+    width: 233px;
+}
+.Omnitours .divHotelCheckinDate {
+    display: inline;
+    float: left;
+    margin-left: 0;
+    width: 225px;
+}
+.Omnitours .divHotelCheckoutDate {
+    display: inline;
+    float: left;
+    margin-left: 4%;
+    width: 232px;
+}
+#dnn_ctr38094_View_ddlHotelNumberRooms,
+#dnn_ctr38094_View_ddlHotelNumberAdults1,
+#dnn_ctr38094_View_ddlHotelNumberChildrens1 {
+    width: 40px;
+}
+.fdsExtraDestination {
+    width: 215px;
+}
+.Omnitours .divExtraDateFrom {
+    float: left;
+    display: inline;
+    margin-top: 0px;
+    width: 215px;
+}
+#divExtraPromoCode {
+    float: left;
+    width: 215px;
+}
+#dnn_ctr38094_View_btnSearchExtra {
+    margin-left: 37px;
+    margin-top: 10px;
+    position: absolute;
+    left: 228px;
+    bottom: -15px;
+}
+
+#dnn_ctr38094_View_txtExtraPromoCode {
+    position: absolute;
+    left: 19px;
+    width: 210px;
+}
+.Omnitours .hasDatepicker {
+    background: url(https://wwww.omnitours.com.co/Portals/159/Netactica/SearchForm/css/Omnitours/images/calendar.png) no-repeat scroll 98% 3px transparent !important;
+    height: 17px;
+}
+.divAirInfoPassengers {
+    margin-top: 30px;
+}
+.fdsAirInfoPassengers {
+    float: left;
+    width: 360px;
+}
+.divAirPromoCode {
+    width: 350px;
+    float: left;
+    position: relative;
+    top: 18px;
+    left: 0;
+}
+.Omnitours .btnSearch {
+    margin-left: 0;
+}
+#dnn_ctr38094_View_btnSearchAir {
+    float: initial;
+    margin-top: 38px !important;
+}
+.Omnitours .btnSearchHotel {
+    margin-top: 35px !important;
+}
+.divHotelPromoCode {
+width: 205px;
+    float: left;
+    margin-top: 15px;
+    margin-left: 0;
+    position: relative;
+    left: -43px;
+}
+.ddlAirHotelNumberRooms {
+    margin-right: 7px;
+}
+.fdsAirHotelDetails {
+    width: 385px;
+}
+.fdsAirHotelDetails {
+    margin-top: 6px;
+}
+#dnn_ctr38094_View_btnSearchAirHotel {
+    position: relative;
+    top: 13px;
+}
+#dnn_ctr38094_View_btnSearchHotel {
+position: relative;
+    left: -32px;
+    width: 175px !important;
+    top: -20px;
+}
+
+#dnn_ctr38094_View_lblAirTogglePromoCode, #arrow_promo_code_netactica_air {
+    position: relative;
+    top: 18px;
+}
+
+#dnn_ctr38094_View_lblAirPromoCode, #dnn_ctr38094_View_lblAirPromoCode, #dnn_ctr38094_View_lblHotelPromoCode, #dnn_ctr38094_View_lblExtraPromoCode, #dnn_ctr38094_View_lblAirHotelPromoCode {
+    display: none;
+}
+
+.divAirHotelPromoCode {
+    width: 185px;
+    float: left;
+    margin-top: 15px;
+}
+.divAirHotelInfoRoom2,
+.divAirHotelInfoRoom3,
+.divAirHotelInfoRoom4,
+.divAirHotelInfoRoom5 {
+    /* margin-bottom: 10px; */
+    
+    margin-left: 0;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+#divAirHotelInfoRoom1 {
+    top: -10px;
+}
+.Omnitours .divAirPromoCode {
+    width: 236px;
+}
+.Omnitours .fdsAirFlights {
+    margin-top: 10px;
+}
+#dnn_ctr38094_View_btnSearchAir {
+    position: absolute;
+    bottom: 24px;
+    right: 160px;
+}
+.Omnitours .fdsHotelDetails {
+    margin-top: 35px;
+    width: 380px;
+    float: left;
+}
+.Omnitours .divHotelInfoRoom1 {
+    width: 230px;
+    float: left;
+}
+.nav > li ul {
+    top: 80px;
+    left: 18px;
+    padding: 15px 5px;
+    display: none;
+    position: absolute;
+    z-index: 2;
+    min-width: 105px;
+    width: 156px;
+    background: rgba(255, 255, 255, 0.8);
+    border: 1px solid #cbcbcb;
+    border-radius: 0px;
+    /* box-shadow: inset 0px 1px 0px 0px rgba(255,255,255,1), 0px 0px 3px rgba(0,0,0,0.15); */
+    
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.4);
+    -webkit-animation-duration: .25s;
+    -webkit-animation-delay: .2s;
+    -webkit-animation-timing-function: ease;
+    -webkit-animation-fill-mode: both;
+    -moz-animation-duration: .25s;
+    -moz-animation-delay: .2s;
+    -moz-animation-timing-function: ease;
+    -moz-animation-fill-mode: both;
+    -ms-animation-duration: .25s;
+    -ms-animation-delay: .2s;
+    -ms-animation-timing-function: ease;
+    -ms-animation-fill-mode: both;
+    animation-duration: .25s;
+    animation-delay: .2s;
+    animation-timing-function: ease;
+    animation-fill-mode: both;
+}
+
+.dropdown-space-link {
+    margin-bottom: 10px !important;
+}
+.background-white {
+    background-color: #ffffff !important;
+    -webkit-transition: background-color 200ms linear;
+    -ms-transition: background-color 200ms linear;
+    transition: background-color 200ms linear;
+}
+.nav .dropdown-menu a {
+    text-align: left;
+}
+.navbar-nav {
+    float: left;
+    margin: 0;
+    height: 70px;
+}
+.nav > li {
+    float: left;
+    height: 70px;
+    padding-top: 0;
+    margin-right: 2px;
+}
+.navbar-brand {
+    float: left;
+    height: auto;
+    padding: 0;
+    font-size: 18px;
+    line-height: 0;
+}
+/** TEXTO PRE BANNER **/
+
+.text-post-video {
+    margin-top: 60px;
+}
+
+.text-post-video .fa-facebook {
+    color: #636361;
+    background: white;
+    padding: 4px 9px 0 9px;
+    font-size: 27px;
+    border-radius: 50%;
+    margin-left: 20px;
+    position: relative;
+    top: -16px;
+}
+.position-post-widget {
+    margin-top: 150px;
+}
+.divisor-texto-prebanner {
+    height: 2px;
+    background: #d6d6d6;
+}
+.text-pre-banners {
+    text-align: center;
+    font-size: 38px;
+    font-weight: bold;
+    color: #4d4d4d;
+    position: relative;
+    top: -7px;
+}
+/** SECCION BANNERS RECOMENDADOS **/
+/* Seccion banner nueva 21 Oct */
+
+.carousel-control .fa-chevron-right {
+    float: right;
+    margin-right: 20px;
+}
+.carousel-control .fa-chevron-left {
+    float: left;
+    margin-left: 20px;
+}
+.carousel-control .fa {
+    color: #4d4d4d;
+    background: #ddcfcf;
+    border-radius: 50%;
+    padding: 15px 19px;
+}
+.background-banner {
+    padding-right: 0;
+    padding-left: 0;
+    height: 600px;
+    background-size: cover;
+}
+.text-birrete-banner {
+    position: absolute;
+    float: left;
+    top: 78px;
+    text-align: left;
+    left: 20px;
+    display: none !important;
+}
+.text-birrete-banner p {
+    font-size: 18px;
+    font-weight: bolder;
+    margin-bottom: 2px;
+    color: black;
+}
+.background-banner-img {
+    position: absolute;
+    left: -3%;
+    top: 7%;
+}
+.container-left-banner {
+    width: 50%;
+    float: left;
+    position: absolute;
+    top: 250px;
+}
+.container-left-banner p {
+    color: white;
+    margin: 5px 0 5px 0;
+}
+.container-left-banner-ecard-dias,
+.container-left-banner-ecard-name {
+    font-size: 22px;
+    font-weight: bold;
+}
+.container-left-banner-ecard-precio {
+    font-size: 16px;
+}
+.container-left-banner-ecard-precio span {
+    font-size: 16px;
+    font-weight: bold;
+}
+.container-left-banner-ecard,
+.container-left-banner-ecard2 {
+    background: rgba(46, 36, 36, 0.72);
+    border-radius: 0 35px 35px 0;
+    width: 45%;
+    float: left;
+    margin: 0 50% 0 0;
+    padding: 15px 20px 15px 20px;
+    text-align: left;
+    -webkit-transition: background-color 500ms linear;
+    -ms-transition: background-color 500ms linear;
+    transition: background-color 500ms linear;
+}
+.container-left-banner-ecard:hover,
+.container-left-banner-ecard2:hover {
+    background: #ffd000;
+    -webkit-transition: background-color 500ms linear;
+    -ms-transition: background-color 500ms linear;
+    transition: background-color 500ms linear;
+}
+.container-left-banner-ecard:hover p,
+.container-left-banner-ecard2:hover p {
+    color: black !important;
+    -webkit-transition: background-color 500ms linear;
+    -ms-transition: background-color 500ms linear;
+    transition: background-color 500ms linear;
+}
+
+
+
+.container-rigth-banner-ecard:hover p,
+.container-rigth-banner-ecard2:hover p {
+    color: black !important;
+    -webkit-transition: background-color 500ms linear;
+    -ms-transition: background-color 500ms linear;
+    transition: background-color 500ms linear;
+}
+.container-left-banner-ecard2 {
+    margin-top: 40px;
+}
+.container-rigth-banner {
+    width: 50%;
+    float: right;
+    position: relative;
+    top: 250px;
+}
+.container-rigth-banner p {
+    color: white;
+    margin: 5px 0 5px 0;
+}
+.container-rigth-banner-ecard-dias,
+.container-rigth-banner-ecard-name {
+    font-size: 22px;
+    font-weight: bold;
+}
+.container-rigth-banner-ecard-precio {
+    font-size: 16px;
+}
+.container-rigth-banner-ecard-precio span {
+    font-size: 16px;
+    font-weight: bold;
+}
+.container-rigth-banner-ecard,
+.container-rigth-banner-ecard2 {
+    background: rgba(46, 36, 36, 0.72);
+    border-radius: 35px 0 0 35px;
+    width: 45%;
+    float: right;
+    margin: 0 0 0 50%;
+    padding: 15px 20px 15px 20px;
+    text-align: right;
+    -webkit-transition: background-color 500ms linear;
+    -ms-transition: background-color 500ms linear;
+    transition: background-color 500ms linear;
+}
+.container-rigth-banner-ecard:hover,
+.container-rigth-banner-ecard2:hover {
+    background: #ffd000;
+    -webkit-transition: background-color 500ms linear;
+    -ms-transition: background-color 500ms linear;
+    transition: background-color 500ms linear;
+}
+.container-rigth-banner-ecard2 {
+    margin-top: 40px;
+}
+.padding-banner {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 20px;
+}
+/** ACORDEN VERTICAL **/
+
+.acordeon-vertical {
+    margin: 35px 0 65px 0;
+}
+
+.destoffer-text-exp {
+    color: white;
+    background: red;
+    text-align: left;
+    width: 68%;
+    font-size: 14px;
+    padding: 3px 10px;
+    font-family: sans-serif
+}
+
+.box h2 {
+    text-align: center;
+    font-size: 26px;
+    color: #4d4d4d;
+    font-weight: bold;
+}
+.novedades {
+    -webkit-box-shadow: 7px 10px 25px -3px rgba(196, 196, 196, 1);
+    -moz-box-shadow: 7px 10px 25px -3px rgba(196, 196, 196, 1);
+    box-shadow: 7px 10px 25px -3px rgba(196, 196, 196, 1);
+}
+.icons-acordeon {
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.box .subtitle-vertical {
+    text-align: center;
+}
+
+.box i {
+    margin-right: 8px;
+}
+.box .border {
+    border-bottom: 1px #d6d6d6 solid;
+}
+.off-padding {
+    padding: 0;
+}
+.off-padding-col {
+    padding: 15px 0 0 0;
+}
+.off-padding-col-two {
+    padding: 15px 0 0 5px;
+}
+.off-padding-col-two h3 {
+    font-size: 13px;
+    color: black;
+    margin-bottom: 3px;
+    font-weight: bold;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.wherepr {
+    margin-bottom: 10px;
+    color: black;
+}
+.wherepr-price {
+    float: right;
+    color: #13a656;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    font-size: 13px;
+}
+.boton-more-planes {
+    background: #13a656;
+    color: white;
+    padding: 7px 20px;
+    border-radius: 5px;
+    margin: 15px 28%;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bold;
+    -webkit-transition: background-color 300ms linear;
+    -ms-transition: background-color 300ms linear;
+    transition: background-color 300ms linear;
+}
+.boton-more-planes:hover {
+    background: #fbcf0a;
+    -webkit-transition: background-color 300ms linear;
+    -ms-transition: background-color 300ms linear;
+    transition: background-color 300ms linear;
+    cursor: pointer;
+}
+.border:hover .hover-acordeon {
+    zoom: 1;
+    filter: alpha(opacity=50);
+    opacity: 1;
+}
+.dropdown-menu > li {
+    height: 25px;
+}
+
+.dropdown-menu > li:hover a {
+    color: #15a656 !important;
+ }
+
+
+
+.nav .dropdown-menu > li > a:hover, .nav .dropdown-menu > .active > a:hover {
+    background-color: transparent!important;
+    background-image: none!important;
+    color: #15a656 !important;
+}
+
+.nav .dropdown-menu a {
+    color: #4d4d4d;
+}
+
+.hover-acordeon {
+    position: absolute;
+    background: rgba(19, 166, 86, 0.95);
+    height: 100%;
+    color: white;
+    font-size: 14px;
+    text-align: left;
+    opacity: 0;
+    -webkit-transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    -ms-transition: opacity 0.5s ease-in-out;
+    -o-transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
+}
+/** RECOMENDACIONES **/
+
+.recomendaciones {
+    width: 100%;
+    padding-top: 150px;
+    background: linear-gradient(0deg, rgba(30, 33, 33, 0.3) 100%, rgba(32, 32, 32, 0.09) 100%), url("https://www.omnitours.com.co/Portals/159/Skins/omnitours-redesign/Images/nuevo-home/img_recomendaciones.jpg");
+    height: 400px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.recomendaciones p {
+    text-align: center;
+}
+.text-recomendaciones {
+    font-size: 40px;
+    color: white;
+    font-weight: bold;
+}
+.text-recomendaciones-two {
+    color: white;
+    font-size: 20px;
+    font-weight: lighter;
+}
+/** NOSOTROS Y AGENTES **/
+
+.about-agents {
+    margin: 0;
+}
+.about-yellow {
+    border-right: 10px white solid;
+    height: 350px;
+    background-position-y: 50%;
+    margin-top: 20px;
+    background-size: cover;
+    background-image: linear-gradient(0deg, rgba(254, 232, 82, 0.7) 100%, rgba(32, 32, 32, 0.09) 100%), url(https://www.omnitours.com.co/Portals/159/Skins/omnitours-redesign/Images/nuevo-home/barranquilla.jpg);
+}
+.text-about-yellow {
+    font-size: 40px;
+    color: #4d4d4d;
+    margin-top: 135px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 25px;
+}
+.text-about-yellow-two {
+    font-size: 18px;
+    color: #4d4d4d;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.about-green {
+    border-left: 10px white solid;
+    margin-top: 20px;
+    background-position-y: 50%;
+    height: 350px;
+    background-size: cover;
+    background-image: linear-gradient(0deg, rgba(19, 166, 86, 0.7) 100%, rgba(32, 32, 32, 0.09) 100%), url(https://www.omnitours.com.co/Portals/159/Skins/omnitours-redesign/Images/nuevo-home/67302781_l.jpg);
+}
+.border-dnn {
+    border-right: 1px white solid;
+}
+.border-dnn a {
+    float: right;
+    margin-left: 5px;
+    color: white;
+    font-size: 17px;
+    margin-bottom: 5px;
+}
+.border-dnn img {
+    float: right;
+    color: white;
+}
+.border-dnn-two a {
+    float: left;
+    color: white;
+    font-size: 17px;
+    margin-bottom: 5px;
+}
+.border-dnn-two img {
+    float: left;
+    color: white;
+    font-size: 17px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+.border-dnn-two i {
+    float: left;
+    color: white;
+    font-size: 17px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+.text-agents {
+    font-size: 40px;
+    color: white;
+    margin-top: 135px;
+    font-weight: bold;
+    text-align: center;
+}
+/** LO MAS BUSCADO **/
+
+.title-lo-mas-buscado {
+    padding: 0 80px;
+}
+.lo-mas-buscado {
+    margin-bottom: 30px;
+}
+.title-lo-mas-buscado img {
+    display: inline-block;
+}
+.title-lo-mas-buscado p {
+    display: inline-block;
+    color: #4d4d4d;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    position: relative;
+    top: 5px;
+}
+.content-lo-mas-buscado {
+    padding: 0 80px;
+}
+
+.content-lo-mas-buscado a {
+    color: #4d4d4d;
+}
+
+.content-lo-mas-buscado a:hover p {
+    color: #15a656 !important;
+}
+.divisor-content-lo-mas-buscado {
+    border-right: 2px #d6d6d6 solid;
+}
+.content-lo-mas-buscado p {
+    color: #4d4d4d;
+    font-size: 15px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+/** MAILER Y INSTAGRAM FOOTER **/
+
+#mc_embed_signup-2 {
+    display: none;
+}
+#mc_embed_signup {
+    position: relative;
+    top: 35px;
+}
+#mc_embed_signup_scroll p {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    margin-top: 7px;
+}
+#mc_embed_signup_scroll .email {
+    opacity: 0.8;
+    transition: opacity 0.3s linear;
+}
+#mc_embed_signup_scroll .nombre {
+    opacity: 0.8;
+    transition: opacity 0.3s linear;
+}
+#mc_embed_signup_scroll input:hover {
+    opacity: 1;
+}
+#mc_embed_signup_scroll-2 {
+    background: #fbcf0a;
+    border: 0;
+    color: #4d4d4d
+}
+.footer-cuadro {
+    background: #636361;
+}
+.footer-cuadro .fa-instagram {
+    font-size: 35px;
+    color: white;
+    position: relative;
+    top: -15px;
+}
+.text-post-video-2 {
+    margin-top: 30px;
+}
+/** LINKS Y INFOMACION DE OMNITOURS FOOTER **/
+
+.info-omni {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.info-omni a {
+    color: white;
+    text-decoration: underline;
+}
+.info-omni p {
+    color: white;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+.info-omni span {
+    font-weight: bold;
+}
+.border-info-omni {
+    padding: 0 0 0 9%;
+}
+.separacion-info-omni {
+    padding: 0px 5%;
+    border-left: 1px #d6d6d6 solid;
+    border-right: 1px #d6d6d6 solid;
+}
+.solicitudes-footer {
+    padding-left: 9%;
+}
+.metodos-pago {
+    background: white;
+    padding: 20px 0 0px 0;
+    margin: 0;
+}
+.metodos-pago p {
+    font-weight: bold;
+}
+.border-metodos-omni {
+    border-right: 1px #d6d6d6 solid;
+}
+.border-metodos-omni img {} .info-final-omni p {
+    display: inline-block;
+    color: white;
+    margin: 10px 0;
+}
+.info-final-omni a {
+    display: inline-block;
+    font-weight: bold;
+    color: white;
+}
+.info-final-omni a:hover {
+    text-decoration: underline;
+}
+.pagos {
+    width: 75%;
+    float: right;
+}
+.certificados {
+    width: 55%;
+    position: relative;
+    top: -6px;
+    float: left;
+}
+.navbar .nav > li > .dropdown-menu:after {
+    position: absolute!important;
+    top: -15px!important;
+    left: 20px!important;
+    content: ''!important;
+    width: 0px!important;
+    height: 0px!important;
+    /* border-left: 15px solid transparent!important; */
+    /* border-right: 15px solid transparent!important; */
+    
+    border-bottom: 15px solid #F5F7F7!important;
+    font-size: 0px!important;
+    line-height: 0px!important;
+}
+.text-welcome-navbar {
+    color: white;
+    font-size: 37px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}
+.divisor-navbar-text {
+    width: 100%;
+    height: 1px;
+    background-color: white;
+}
+#slide-nav.navbar-inverse #slidemenu {
+    background: #12a655;
+    padding: 0 20px;
+}
+#slidemenu ul li {
+    width: 100%;
+    height: 40px;
+    padding-left: 80px;
+    /* font-size: 20px; */
+}
+#slidemenu .open .dropdown-menu {
+    position: absolute;
+    float: none;
+    width: 100%;
+    margin-top: 0;
+    background-color: transparent;
+    border: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    left: 0;
+    width: 100%;
+    top: 60px;
+}
+#slide-nav #slidemenu .navbar-nav .dropdown-menu li a {
+    min-width: 0;
+    width: 100%;
+    white-space: normal;
+}
+#slidemenu .dropdown-menu li {
+    height: auto;
+    padding: 0;
+}
+#slidemenu .dropdown-menu li a {
+    width: 100%;
+    color: white;
+    padding: 0;
+}
+#slidemenu .dropdown-menu {
+    border: 1px solid white;
+}
+.navbar-inverse .navbar-nav>li>a {
+    color: white;
+    font-size: 20px;
+}
+#navbar-height-col {
+    right: -80%;
+}
+#slide-nav #slidemenu {} 
+
+
+@media only screen and (max-width: 767px) {
+    .navbar-inverse {
+        background-color: white;
+        border-color: white;
+    }
+
+    .dropdown {
+      border-left: none;
+  }
+
+    .slide-active .icon-bar1 {
+      transform: translateY(8px) translateX(0) rotate(45deg);
+    }
+
+    .slide-active .icon-bar2 {
+      transform: translateY(-3px) translateX(0) rotate(-45deg);
+    }
+
+    .slide-active .icon-bar3 {
+      display: none !important;
+    }
+
+    #netactica_tabs38094_links li a table tbody tr td img {
+      position: relative;
+      left: 3px;
+    }
+
+    #netactica_tabs38094_links li #ui-id-1 table tbody tr td img {
+      left: 6px !important;
+    }
+
+    #netactica_tabs38094_links li #ui-id-3 table tbody tr td img {
+      left: 4px !important;
+    }
+
+    #netactica_tabs38094_links li #ui-id-4 table tbody tr td img {
+      left: 7px !important;
+    }
+
+    #netactica_tabs38094_links li #ui-id-5 table tbody tr td img {
+      left: 6px !important;
+    }
+
+
+    .dropdown:hover .dropdown-menu {
+        opacity: 0;
+    }
+
+    #slidemenu .open .dropdown-menu {
+        top: 50px;
+        opacity: 1;
+    }
+
+    .nav > li ul {
+        left: 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    #slidemenu ul li {
+    width: 100%;
+    height: 40px;
+    padding-left: 0px;
+    /* font-size: 20px; */
+    text-align: center;
+}
+
+    .nav > li ul {
+    top: 70px; }
+
+    #netactica_hotel_tab38094_widget, #netactica_air_tab38094_widget, #netactica_extras_tab38094_widget, #netactica_airhotel_tab38094_widget {
+            background: rgb(98, 98, 96);
+    }
+
+    .info-final-omni p {
+        display: inline;
+    }
+
+    #dnn_ctr38094_View_btnSearchExtra {
+    margin-left: 37px;
+    margin-top: 10px;
+    position: relative;
+    /* width: 80%; */
+    left: 0px;
+    bottom: 0;
+}
+
+.lazy {
+    width: 100%;
+}
+
+#dnn_ctr38094_View_lblAirHotelTogglePromoCode {
+    position: relative;
+    top: 20px;
+    left: 0;
+    width: 205px;
+}
+
+#arrow_promo_code_netactica_air_hotel {
+    position: relative;
+    top: 20px;
+    left: 0;
+}
+
+.divAirHotelPromoCode {
+    width: 100%;
+    float: left;
+    margin-top: 0;
+}
+
+#dnn_ctr38094_View_txtAirHotelPromoCode {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+#divAirPromoCode {
+    display: block !important;
+    width: 100%;
+}
+
+#divAirHotelPromoCode {
+    display: block !important;
+}
+
+#dnn_ctr38094_View_btnSearchAirHotel {
+    position: relative;
+    top: 0px;
+}
+
+#dnn_ctr38094_View_lblAirHotelTogglePromoCode, #arrow_promo_code_netactica_air_hotel {
+    position: relative;
+    top: 0;
+}
+
+#dnn_ctr38094_View_btnSearchAir {
+    position: initial;
+    bottom: -55px;
+    right: 0;
+}
+
+#dnn_ctr38094_View_lblHotelTogglePromoCode {
+    position: relative;
+    left: 0;
+    top: 17px;
+}
+
+#arrow_promo_code_netactica_hotel {
+    position: relative;
+    top: 17px;
+    left: 0;
+}
+
+#dnn_ctr38094_View_txtExtraPromoCode {
+    position: relative ;
+    left: 0;
+    width: 100%;
+}
+    #slide-nav .navbar-toggle > .icon-bar {
+        width: 100%;
+        display: block;
+        height: 3px;
+        margin: 5px 0 0 0;
+    }
+    .widgetPane {
+        width: 100%;
+    }
+    #slide-nav .navbar-toggle {
+        cursor: pointer;
+        position: relative;
+        line-height: 0;
+        float: right;
+        margin: 0;
+        width: 45px;
+        height: 40px;
+        padding: 8px 11px 0 0;
+        border: 0;
+        background: transparent;
+    }
+    #slide-nav .navbar-toggle > .icon-bar {
+        width: 100%;
+        display: block;
+        height: 6px;
+        margin: 5px 0 0 0;
+        background-color: #626260;
+    }
+    #pnl38094Netactica1 {
+        margin-top: 0;
+        width: 100%;
+        position: relative;
+        top: -18px;
+        margin: 0;
+    }
+
+
+
+    #pnl38094Netactica6 {
+        margin-top: 0;
+        position: relative;
+        top: -15px;
+        margin: 0;
+    }
+
+
+    .fdsAirHotelDetails select {
+        width: 40px !important;
+    }
+    .btnSearchAirHotel {
+        margin-top: 17px !important;
+        width: 30% !important;
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+    }
+    .Omnitours .rbtAirRoundTrip {
+        margin-right: 5px;
+    }
+    .Omnitours .rbtAirOneWay {
+        margin-right: 5px;
+    }
+    .Omnitours .ddlAirNumberAdults,
+    .Omnitours .ddlAirNumberChildrens,
+    .Omnitours .ddlAirNumberInfants {
+        width: 31px;
+    }
+    .fdsAirInfoPassengers {
+        float: left;
+        width: 100%;
+    }
+    #dnn_ctr38094_View_btnSearchAir {
+        margin-left: 0px !important;
+    }
+    .widgetPane {
+        width: 100%;
+        background: rgba(77, 77, 77, 1);
+        border-radius: 0;
+        height: auto;
+    }
+    #dnn_ctr38094_ContentPane {
+        height: auto;
+    }
+    #netactica_tabs38094_links td {
+        color: transparent;
+        font-size: 8px;
+        /* display: none; */
+    }
+    .Omnitours .ui-tabs .ui-tabs-nav {
+        /* background-image: url(images/fondo.png); */
+        
+        border-radius: 0;
+        height: auto;
+        margin: 0;
+        padding: 0;
+        margin: 0;
+        width: 700px;
+        /* box-shadow: -12px -18px 8px -14px; */
+    }
+    #netactica_tabs38094_links {
+        position: relative;
+    top: -36px;
+margin: 0 auto;
+    width: 240px;
+    overflow: hidden;
+    }
+    #pnl38094Netactica5 {
+        top: -30px;
+        position: relative;
+        margin-top: 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .Omnitours .fdsExtraDates {
+        float: left;
+        margin-right: 0;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+    .Omnitours .ui-tabs .ui-tabs-nav li {
+        margin-right: 0;
+        padding: 7px 16px 8px 5px;
+        background-color: #636361;
+        width: 45px;
+        margin-right: 3px;
+    }
+    #tabs38094 {
+        background: rgba(99, 99, 97, 0.95);
+        padding: 0;
+        height: auto;
+    }
+    #dnn_ctr38094_View_pnlExtraNormalView {
+        width: 100%;
+    }
+    .Omnitours .fdsExtraDestination {
+        float: left;
+        width: 100%;
+        margin-right: 40px;
+        margin-bottom: 20px;
+    }
+    .Omnitours .divExtraDateTo {
+        float: left;
+        width: 50%;
+        display: inline;
+    }
+    .position-post-widget {
+        margin-top: 15px;
+    }
+    .hide-instagram, .instagram-photos, .text-post-video-2  {
+        display: none;
+    }
+    .info-omni {
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+.metodos-pago {
+    display: none;
+}
+    #pnl38094Netactica2 {
+        margin-top: 0;
+        margin-right: 0;
+        margin-left: 0;
+        position: relative;
+        top: -13px;
+        left: 0;
+    }
+    #dnn_ctr38094_View_lblExtraAndOperator {
+        display: none;
+    }
+    #divExtraPromoCode {
+        display: block !important;
+        float: left;
+        width: 100%;
+    }
+    #dnn_ctr38094_View_txtExtraDateTo {
+        width: 100% !important;
+    }
+    .Omnitours .divExtraDateFrom {
+        float: left;
+        display: inline;
+        margin-top: 0px;
+        width: 50%;
+    }
+    .Omnitours .divExtraDateFrom input {
+        display: inline-block;
+        width: 100% !important;
+    }
+    .Omnitours .btnSearch {
+        background-color: #13a655 !important;
+        width: 100% !important;
+        font-weight: bold;
+    }
+    #pnl38094Netactica2 {
+        margin-top: 0px;
+        width: 100%;
+    }
+    .Omnitours .fdsHotelDates {
+        width: 100%;
+    }
+    .Omnitours .fdsHotelDetails {
+        margin-top: 15px;
+        width: 440px;
+        float: left;
+    }
+    .Omnitours .divHotelInfoRoom1 {
+        width: 100% !important;
+        top: 0px !important;
+        margin-left: 0px !important;
+        position: relative !important;
+        left: 0 !important;
+    }
+    .fdsHotelDetails select {
+        width: 40px;
+    }
+    .divHotelPromoCode {
+        display: block !important;
+        width: 100%;
+        float: left;
+        margin-top: 10px;
+        margin-left: 0;
+        left: 0;
+    }
+    .over-acordeon {
+        display: none;
+    }
+    .Omnitours .divHotelInfoRoom1 {
+        width: 100% !important;
+        margin-left: 0px !important;
+        /* top: -10px; */
+    }
+    .Omnitours .divHotelInfoRoom1,
+    .Omnitours .divAirHotelInfoRoom1 {
+        top: -26px;
+        position: relative;
+        left: 0px;
+    }
+    #dnn_ctr38094_View_btnSearchHotel {
+    position: relative;
+    left: 0;
+    /* margin-top: 10px !important; */
+    width: 100% !important;
+    top: -10px;
+    }
+    .Omnitours .btnSearch {
+        background-color: #fdbb15;
+        color: #ffffff;
+        padding: 4px;
+        text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+        width: 30%;
+        float: right;
+        text-transform: uppercase;
+        border: none;
+        margin-left: 5%;
+        height: 30px;
+        border-radius: 8px;
+        margin-right: 0;
+        margin-top: 10px;
+    }
+    /** css del banner de responsive **/
+    
+    .background-banner {
+        height: 200px;
+    }
+    .padding-banner {
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 10px;
+    }
+    .background-banner-img {
+        position: absolute;
+        left: -3%;
+        top: 7%;
+        width: 200px;
+    }
+    .color-col-cont-banner-responsive {
+        margin-top: 10px;
+        background-color: #13a655;
+        border-radius: 3px;
+        padding: 5px 0;
+    }
+    .nombre-plan-banner-responsive,
+    .dias-plan-banner-responsive {
+        text-align: left;
+        color: white;
+        font-weight: bold;
+    }
+    .precio-plan-banner-responsive {
+        text-align: right;
+        color: white;
+        font-weight: bold;
+        font-size: 16px;
+        margin-top: 9px;
+    }
+    .carousel-control {
+        width: 10px;
+    }
+    .carousel-control .fa {
+        color: #4d4d4d;
+        background: #ddcfcf;
+        border-radius: 50%;
+        padding: 10px 13px;
+    }
+    /** css del banner de responsive **/
+    
+    #dnn_dnnLOGO_imgLogo {
+        width: 180px;
+        margin-top: 5px;
+    }
+    .navbar-default .navbar-toggle .icon-bar {
+        background-color: #4d4d4d;
+        width: 26px;
+        height: 4px;
+    }
+    .widgetPaneWrapper {
+        top: 95px;
+    }
+    .fullscreen-bg__video {
+        display: none;
+    }
+    .sliderWigetWrapp {
+        height: 365px;
+    }
+    .Omnitours .ui-tabs .ui-tabs-nav {
+        width: 100%;
+    }
+    .navbar-toggle {
+        border: 0;
+    }
+    .text-pre-banners {
+        font-size: 20px;
+        margin-bottom: 0;
+    }
+    .text-recomendaciones {
+        font-size: 25px;
+    }
+    .text-recomendaciones-two {
+        font-size: 15px;
+    }
+    .about-yellow {
+        border-right: 0;
+        padding-top: 150px;
+    }
+    .about-green {
+        border-left: 0;
+        padding-top: 150px;
+    }
+    .text-about-yellow,
+    .text-agents {
+        margin-top: 0;
+        font-size: 35px;
+    }
+    .border-dnn a,
+    .border-dnn-two a {
+        font-size: 15px;
+    }
+    .content-lo-mas-buscado {
+        padding: 0;
+        text-align: center;
+    }
+    .lo-mas-buscado .col-xs-12 {
+        margin-top: 25px;
+    }
+    .divisor-content-lo-mas-buscado {
+        border-right: 0;
+    }
+    .title-lo-mas-buscado {
+        text-align: center;
+    }
+    #mc_embed_signup_scroll p {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    margin-top: 7px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+    #mc_embed_signup_scroll .email,
+    #mc_embed_signup_scroll .nombre {
+        opacity: 1;
+        width: 80%;
+        margin: 0 10%;
+        margin-bottom: 10px;
+    }
+#mc_embed_signup_scroll-2 {
+    width: 80%;
+    margin: 0 10%;
+}
+    .border-info-omni {
+        border-right: none;
+        padding: 0 15px;
+    }
+    .metodos-pago p {
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+    .border-metodos-omni {
+        border: none;
+    }
+    .pagos,
+    .certificados {
+        height: auto;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+    .metodos-pago {
+        padding: 20px 0 0px 0;
+    }
+    .certificados {
+        top: 0;
+    }
+    .info-omni p {
+        color: white;
+        margin-bottom: 10px;
+        font-size: 13px;
+    }
+    .separacion-info-omni {
+        padding: 0 15px;
+    }
+    .separacion-info-omni {
+        border-left: 1px #d6d6d6 solid;
+    }
+    .hover-acordeon {
+        display: none !important;
+    }
+
+        #pnl38094Netactica10 {
+        background: rgba(99, 99, 97, 1);
+    }
+
+    #slide-nav .container {
+        margin: 0!important;
+        padding: 0!important;
+        height: 100%;
+    }
+
+    #ctr73400434362ViewtxtExtraPromoCode {
+    position: relative;
+    top: 0;
+    left: 3px;
+    display: inline-block;
+}
+
+    #promo-343 {
+    position: relative;
+    width: 100%;
+    right: 0;
+    top: 5px;
+    cursor: pointer;
+}
+
+.row-34523 img {
+    display: none;
+}
+
+.sliderWigetWrapp {
+    
+}
+
+#button-planes {
+    top: 10px;
+    position: relative;
+    margin-top: 20px;
+    left: 0;
+}
+
+.separacion-info-omni {
+    border-left: 1px #d6d6d6 solid;
+    border-right: none;
+}
+
+#arrow_promo_code_netactica_hotel2 {
+    position: relative;
+    top: 5px;
+    left: 30px;
+}
+}
+
+@media only screen and (min-width: 1024px) {
+
+  .position-post-excursiones {
+    margin-top: 150px;
+}
+
+.margin-icon-circuito {
+        margin-left: 35px;
+    }
+
+    .Omnitours .lblHotelAdults2 {
+        margin-left: 0;
+    }
+
+    .DnnModule--1 {
+        margin-top: 100px;
+        margin-bottom: 20px;
+    }
+
+    .hide-instagram {
+        margin-top: 30px !important;
+    }
+
+    .Omnitours .divHotelInfoRoom2, .Omnitours .divHotelInfoRoom3 {
+        margin-left: 138px;
+    }
+
+    .Omnitours .ddlHotelNumberAdults2, .Omnitours .ddlHotelNumberAdults3, .Omnitours .ddlHotelNumberChildrens {
+        width: 42px;
+    }
+
+    .Omnitours .lblHotelChildrens2, .Omnitours .lblHotelChildrens3 {
+        margin-left: 9px;
+    }
+
+    .Omnitours .lblHotelAdults3 {
+        margin-left: 0;
+    }
+
+
+    .navbar-default {
+        height: 90px;
+    }
+    .nav .dropdown-menu a {
+        padding: 3px 5px;
+    }
+    .navbar-header {
+        padding-top: 7px;
+    }
+
+    #bs-example-navbar-collapse-1 {
+        padding-top: 10px;
+    }
+
+    .nav > li {
+        float: left;
+        height: 70px;
+        margin-right: 2px;
+        padding: 0 15px;
+        padding-top: 0;
+    }
+
+    .nav p img {
+        width: 15px;
+        margin-right: 5px;
+    }
+
+    .nav p {
+        margin: 2px 0 5px 0;
+        color: #4d4d4d;
+    }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1349px) {
+    .fdsExtraDestination {
+        width: 230px;
+    }
+
+    .backgroun-mas-buscado {
+    height: 110px;
+    background-size: cover;
+}
+
+    .info-omni p {
+        text-align: center;
+    }
+
+    .border-info-omni {
+        padding: 0;
+    }
+
+    .separacion-info-omni {
+        padding: 0px 5%;
+        border-left: 1px #d6d6d6 solid;
+        border-right: none;
+    }
+    #mc_embed_signup_scroll p {
+        font-size: 15px;
+    }
+    .off-padding-col-two h3 {
+        font-size: 10px;
+        color: black;
+        margin-bottom: 3px;
+        font-weight: bold;
+    }
+    .wherepr-price {
+        font-size: 12px;
+    }
+    .wherepr {
+        margin-bottom: 0;
+        color: black;
+        font-size: 11px;
+    }
+    .content-lo-mas-buscado {
+        padding: 0px;
+        text-align: center;
+    }
+    .title-lo-mas-buscado {
+        padding: 0;
+        text-align: center;
+    }
+    .pagos {
+        width: 60%;
+        float: inherit;
+    }
+    .certificados {
+        width: 45%;
+        position: relative;
+        top: -6px;
+        float: inherit;
+    }
+    .acordeon-vertical {
+        margin: 10px 0 65px 0;
+    }
+    .recomendaciones {
+        width: 100%;
+        padding-top: 125px;
+        background: linear-gradient(0deg, rgba(30, 33, 33, 0.3) 100%, rgba(32, 32, 32, 0.09) 100%), url(https://www.omnitours.com.co/Portals/159/Skins/omnitours-redesign/Images/nuevo-home/82606382_ml.jpg);
+        height: 350px;
+    }
+    .boton-more-planes {
+        margin: 15px 19%;
+    }
+    .novedades {
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+    }
+    .container-rigth-banner-ecard,
+    .container-rigth-banner-ecard2,
+    .container-left-banner-ecard,
+    .container-left-banner-ecard2 {
+        padding: 5px 20px 5px 20px;
+    }
+    .Omnitours .fdsHotelDetails {
+        width: 438px !important;
+    }
+    .divHotelPromoCode {
+        display: block !important;
+        width: 275px;
+        float: left;
+        margin-top: 15px;
+        margin-left: 0px;
+    }
+    .fdsAirHotelDetails {
+        width: 455 px !important;
+    }
+    .background-banner-img {
+        position: absolute;
+        left: -3%;
+        top: 7%;
+        width: 300px;
+    }
+    .container-rigth-banner-ecard-dias,
+    .container-rigth-banner-ecard-name {
+        font-size: 17px;
+        font-weight: bold;
+    }
+    .container-rigth-banner-ecard-precio {
+        font-size: 15px;
+    }
+    .container-rigth-banner-ecard-precio span {
+        font-size: 14px;
+        font-weight: bold;
+    }
+    .container-left-banner-ecard-dias,
+    .container-left-banner-ecard-name {
+        font-size: 12px;
+        font-weight: bold;
+    }
+    .container-left-banner-ecard-precio {
+        font-size: 12px;
+    }
+    .container-left-banner-ecard-precio span {
+        font-size: 12px;
+        font-weight: bold;
+    }
+    .container-left-banner-ecard2,
+    .container-rigth-banner-ecard2 {
+        margin-top: 10px !important;
+    }
+    .container-left-banner {
+        width: 100%;
+        float: left;
+        position: absolute;
+        top: 115px;
+    }
+    .container-rigth-banner {
+        width: 100%;
+        float: right;
+        position: relative;
+        top: 115px;
+    }
+    .background-banner {
+        background: url(https://www.omnitours.com.co/portals/159/Skins/omnitours-redesign/Images/banners/banner_3.jpg) 50% / 100%;
+        vertical-align: top;
+        padding-right: 0;
+        padding-left: 0;
+        height: 300px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position-y: 0px;
+    }
+    .divAirHotelPromoCode {
+        width: 207px;
+        display: block !important;
+        float: left;
+        margin-top: 15px;
+    }
+    .text-pre-banners {
+        font-size: 29px;
+    }
+    .Omnitours .fdsHotelDetails {
+        width: 438px !important;
+    }
+    #dnn_ctr38094_View_txtHotelPromoCode {
+        float: left;
+        width: 100%;
+        margin-right: 0;
+    }
+    .Omnitours .btnSearch {
+        background-color: #13a655;
+        width: 207px !important;
+        font-weight: bold;
+        float: left;
+        margin-left: 19px !important;
+    }
+    .fdsAirInfoPassengers {
+        float: left;
+        width: 431px;
+    }
+    .Omnitours .divAirPromoCode {
+        width: 224px;
+    }
+}
+
+
+@media only screen and (min-width: 1024px) and (max-width: 1349px) {
+    .container-left-banner {
+        width: 50%;
+        float: left;
+        position: absolute;
+        top: 150px;
+    }
+    .container-rigth-banner {
+        width: 50%;
+        float: right;
+        position: relative;
+        top: 150px;
+    }
+    .background-banner {
+        height: 350px;
+    }
+
+    .container-left-banner-ecard, .container-left-banner-ecard2 {
+    width: 88%;
+    float: left;
+    margin: 0 10% 0 0;
+}
+
+.container-rigth-banner-ecard, .container-rigth-banner-ecard2 {
+    width: 88%;
+    float: right;
+    margin: 0 0 0 10%;
+}
+
+.container-left-banner p {
+    color: white;
+    margin: 3px 0 3px 0;
+}
+
+.container-rigth-banner p {
+    color: white;
+    margin: 3px 0 3px 0;
+}
+}
+
+@media only screen and (min-width: 1200px) {
+  .fa-chevron-left, .fa-chevron-right {
+    display: none;
+    }
+
+    #carousel-example-generic:hover .fa-chevron-left {
+        display: block;
+    }
+
+    #carousel-example-generic:hover .fa-chevron-right{
+        display: block;
+    }  
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1349px) {
+
+    .pagos {
+        width: 90%;
+        float: right;
+    }
+    .certificados {
+        width: 70%;
+        position: relative;
+        top: -6px;
+        float: left;
+    }
+
+    .container-left-banner {
+    width: 50%;
+    float: left;
+    position: absolute;
+    top: 170px;
+}
+
+.container-rigth-banner {
+    width: 50%;
+    float: right;
+    position: relative;
+    top: 170px;
+}
+}
+@media only screen and (min-width: 1350px) and (max-width: 1600px) {
+    .container-left-banner-ecard,
+    .container-left-banner-ecard2 {
+        width: 90%;
+    }
+    .container-rigth-banner-ecard,
+    .container-rigth-banner-ecard2 {
+        width: 90%;
+    }
+    .background-banner-img {
+        width: 70%;
+        left: -4%;
+    }
+    .container-left-banner {
+        float: left;
+        position: absolute;
+        top: 180px;
+    }
+    .container-rigth-banner {
+        float: right;
+        position: relative;
+        top: 180px;
+    }
+    .container-left-banner-ecard,
+    .container-left-banner-ecard2 {
+        width: 92%;
+        float: left;
+        margin: 0 50% 0 0;
+        padding: 10px 20px 10px 20px;
+    }
+    .container-rigth-banner-ecard,
+    .container-rigth-banner-ecard2 {
+        width: 92%;
+        float: right;
+        margin: 0 0 0 50%;
+        padding: 10px 20px 10px 20px;
+    }
+    .container-left-banner-ecard2 {
+        margin-top: 25px;
+    }
+    .container-rigth-banner-ecard2 {
+        margin-top: 25px;
+    }
+    .container-left-banner-ecard-dias,
+    .container-left-banner-ecard-name {
+        font-size: 19px;
+        font-weight: bold;
+    }
+    .background-banner {
+        padding-right: 0;
+        padding-left: 0;
+        height: 425px;
+        background-size: cover;
+    }
+}
+
+@media only screen and (min-width: 1440px) and (max-width: 1899px) {
+.container-left-banner {
+    float: left;
+    position: absolute;
+    top: 190px;
+}
+.container-rigth-banner {
+    float: right;
+    position: relative;
+    top: 190px;
+}
+
+.img-info-banners {
+    width: 70%;
+    margin: 0 15%;
+    top: 15px;
+    position: absolute;
+}
+
+
+.background-banner {
+    height: 450px;
+}
+}
+
+@media only screen and (min-width: 1900px) {
+    .container-left-banner-ecard,
+    .container-left-banner-ecard2 {
+        width: 70%;
+    }
+    .container-rigth-banner-ecard,
+    .container-rigth-banner-ecard2 {
+        width: 70%;
+    }
+    .background-banner-img {
+        width: 48%;
+        left: -21px;
+    }
+
+    .container-left-banner-ecard-dias, .container-left-banner-ecard-name {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.container-left-banner-ecard-precio {
+    font-size: 16px;
+}
+
+.container-left-banner-ecard-precio span {
+    font-size: 16px;
+    font-weight: bold;
+}
+}

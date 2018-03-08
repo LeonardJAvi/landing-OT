@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  banner: MyString
+  title: MyString
+  subtitle: MyText
+  days: MyString
+  url: MyString
+  destination_id: MyString
+
+two:
+  banner: MyString
+  title: MyString
+  subtitle: MyText
+  days: MyString
+  url: MyString
+  destination_id: MyString

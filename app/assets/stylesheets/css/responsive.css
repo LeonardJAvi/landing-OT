@@ -1,0 +1,373 @@
+/* ===== XS =====*/
+@media (min-width: 0px) and (max-width: 767px){
+  h1.title-destino{
+    font-size: 25px;
+  }
+  ul.filter-letter{
+    padding: 0px 20px;
+  }
+  .mask-box {
+      background-color: rgba(18, 166, 85, .8);
+   }
+   .title-box{
+      opacity: 1 !important;
+   }
+   .cover-city {
+     height: 300px;
+   }
+   h1.title-cover-city{
+   	 font-size: 25px;
+   }
+   .info-cover-city{
+      max-width: 100vw;
+      width: auto;
+      padding: 0px 4px;
+   }
+   span.info-cover-city{
+      font-size: 16px;
+      margin: 5px 0px;
+   }
+   h2.title-promocion{
+   	 font-size: 20px;
+   	 margin: 20px 0px !important;
+     text-align: center;
+   }
+   .button-omni{
+     background: #e6b90c !important;
+     font-size: 13px !important;
+     width: 110px;
+   }
+   .price-card {
+     font-size: 13px;
+
+   }
+   section.content{
+   /*  margin-top: 70px !important; */
+   }
+   #box-images-destinos {
+     margin: 25px 0px 50px 0px;
+   }
+   .fix-nav{
+     height: auto;
+     min-height: 52px;
+   }
+   #slide-nav .navbar-header{
+     padding: 0px 8px !important;
+   }
+}
+/* ===== XS =====*/
+
+/* ===== Smartphone Minis (example: Samsung S3) (fix) =====*/
+@media (min-width: 0px) and (max-width: 320px){
+   h1.title-destino{
+   	  font-size: 21px;
+   }
+   h2.title-promocion{
+     font-size: 20px;
+     text-align: center;
+   }
+   ul.filter-letter{
+		padding: 0px 35px;
+	}
+  .title-box {
+     font-size: 20px;
+      opacity: 1 !important;
+  }
+  .mask-box {
+      background-color: rgba(18, 166, 85, .8);
+  }
+  .button-omni {
+  	width: 95px;
+    font-size: 13px !important;
+    background: #e6b90c !important;
+   }
+   .item-card{
+   	  font-size: 14px !important;
+   }
+  .price-card {
+    font-size: 12px !important;
+   }
+   #title-item{
+     font-size: 20px !important;
+   }
+   input[type="radio"] {
+      zoom: 1 !important;
+   }
+   #items-select > li > div > label{
+    font-size: 15px;
+   }
+   #items-select > li {
+    margin-left: 38px;
+   }
+
+}
+/* ===== Smartphone Minis (example: Samsung S3) (fix) =====*/
+
+/* ===== SM =====*/
+@media (min-width: 768px) and (max-width: 991px){
+  .title-box {
+    font-size: 20px;
+    opacity: 1 !important;
+  }
+  .mask-box {
+    background-color: rgba(18, 166, 85, .8);
+  }
+  .button-omni{
+    background: #e6b90c !important;
+  }
+  .navbar-inverse {
+    background-color: #fff;
+    border-color: transparent;
+   }
+   .select-items{
+  /*   max-width: 400px; */
+   }
+   #items-select > li {
+     /* margin-left: 135px; */
+   }
+  /*  fix navbar omnitours */
+  .navbar-nav#list-price{
+    padding: 0px 50px 0px 0px;
+  }
+  .nav p {
+    margin: 2px 0 5px;
+    color: #4d4d4d;
+    font-size: 13px;
+  }
+  .nav p img {
+    width: 13px;
+    margin-right: 5px;
+  }
+  .nav > li {
+    float: left;
+    height: 70px;
+    margin-right: 2px;
+    padding: 0px 15px;
+    padding-top: 0;
+  }
+  #bs-example-navbar-collapse-1 > ul > li.dropdown > ul > li {
+    font-size: 12px !important;
+  }
+  .dropdown-menu > li > a {
+    padding: 3px 10px;
+  }
+  /*  fix navbar omnitours */
+  section.content{
+    margin-top: 70px !important;
+  }
+  h2.title-promocion{
+    text-align: center;
+  }
+}
+/* ===== SM =====*/
+
+/* ===== MD =====*/
+@media (min-width: 992px) and (max-width: 1199px) {
+	 .title-box {
+    font-size: 20px;
+    opacity: 1 !important;
+   }
+   .mask-box {
+    background-color: rgba(18, 166, 85, .8);
+   }
+   .button-omni {
+    font-size: 18px !important;
+    padding: 5px 10px;
+    width: 220px !important;
+    background: #e6b90c !important;
+   }
+   .price-card {
+    font-size: 17px;
+   }
+   section.content{
+    margin-top: 70px !important;
+   }
+   h2.title-promocion{
+    text-align: center;
+   }
+     /*  fix navbar omnitours */
+  .navbar-nav#list-price{
+    padding: 0px 60px 0px 0px;
+  }
+  .nav p {
+    margin: 2px 0 5px;
+    color: #4d4d4d;
+    font-size: 13px;
+  }
+  .nav p img {
+    width: 13px;
+    margin-right: 5px;
+  }
+  .nav > li {
+    float: left;
+    height: 70px;
+    margin-right: 2px;
+    padding: 0px 15px;
+    padding-top: 0;
+  }
+  #bs-example-navbar-collapse-1 > ul > li.dropdown > ul > li {
+    font-size: 12px !important;
+
+  }
+  #bs-example-navbar-collapse-1{
+    padding: 6px 0px;
+  }
+  .dropdown-menu > li > a {
+    padding: 3px 10px;
+  }
+  .border-info-omni {
+     display: block !important;
+     margin: 15px 0px 0px 0px;
+     padding: 25px 0px;
+   }
+   .solicitudes-footer {
+      padding: 15px 0px;
+      margin-top: 15px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+     justify-content: center;
+    }
+    .separacion-info-omni{
+        padding: 15px 0px 4px 0px;
+      border-left: 1px #d6d6d6 solid;
+      border-right: 1px #d6d6d6 solid;
+            display: flex;
+      flex-direction: column;
+      align-items: center;
+     justify-content: center;
+    }
+     .solicitudes-footer > *,
+     .border-info-omni > *{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+    }
+  /*  fix navbar omnitours */
+
+}
+/* ===== MD =====*/
+
+/* ===== IPAD Pro (fix) =====*/
+@media (width: 1024px) and (height: 1366px) {
+  .button-omni {
+    font-size: 19px !important;
+    padding: 5px 10px;
+    width: 225px !important;
+    background: #e6b90c !important;
+   }
+   h2.title-promocion {
+    margin-top: 20px !important;
+    text-align: center;
+   }
+   .price-card {
+    font-size: 18px;
+   }
+   section.content{
+/*     margin-top: 70px !important; */
+   }
+   .fix-nav{
+     height: auto;
+     min-height: 21px;
+   }
+}
+/* ===== IPAD Pro (fix) =====*/
+
+/* ===== IPAD (fix) =====*/
+@media (width: 768px) and (height: 1024px) {
+  .button-omni {
+    font-size: 19px !important;
+    padding: 5px 10px;
+    width: 300px;
+    background: #e6b90c !important;
+   }
+   h2.title-promocion {
+    margin-top: 20px !important;
+   }
+   .price-card {
+     font-size: 19px;
+   }
+   section.content{
+    margin-top: 71px !important;
+   }
+   h2.title-promocion{
+    text-align: center;
+   }
+}
+/* ===== IPAD (fix) =====*/
+
+/* ===== IPAD 4 (fix) =====*/
+@media (width: 320px) and (height: 480px) {
+  .button-omni{
+    background: #e6b90c !important;
+  }
+  section.content{
+    /* margin-top: 70px !important; */
+  }
+  h2.title-promocion{
+    text-align: center;
+  }
+}
+/* ===== IPAD 4 (fix) =====*/
+
+/* ===== LG =====*/
+@media (min-width: 1200px) and (max-width: 1600px) {
+  #bs-example-navbar-collapse-1{
+     padding-right: 25px;
+  }
+
+  .info-cover-city{
+     width: 700px;
+  }
+  section.content{
+    margin-top: 90px !important;
+   }
+}
+/* ===== LG =====*/
+
+/* ===== XL =====*/
+@media (min-width: 1601px) and (max-width: 2048px) {
+
+   .info-cover-city{
+     width: 650px;
+  }
+  .fix-nav{
+     height: auto;
+     min-height: 90px;
+   }
+}
+/* ===== XL =====*/
+
+/* ===== BlackBerry PlayBook (fix) =====*/
+@media (width: 600px) and (height:1024px) {
+  .button-omni {
+    font-size: 18px !important;
+    width: 280px;
+    background: #e6b90c !important;
+  }
+  .price-card {
+    font-size: 17px;
+  }
+  h2.title-promocion{
+    text-align: center;
+  }
+}
+/* ===== BlackBerry PlayBook (fix) =====*/
+
+/* ===== Nexus 7 (fix) =====*/
+@media (width: 600px) and (height:960px) {
+  .button-omni {
+    font-size: 18px !important;
+    width: 250px;
+    background: #e6b90c !important;
+  }
+  .price-card {
+    font-size: 17px;
+  }
+  h2.title-promocion{
+    text-align: center;
+  }
+}
+/* ===== Nexus 7 (fix) =====*/

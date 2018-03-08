@@ -1,0 +1,65 @@
+.listing.col.l9.m12.s12
+	- if can? :new, model
+		= link_to new_admin_destination_path, class: 'btn-floating btn-large waves-effect waves-light btn-new hide-on-small-only', title: 'New' do
+			= material_icon.md_24.add
+	= entries(@total, @objects)
+	= link_to admin_destinations_path(:format => :xls), class: "btn-tool-right btn-floating btn-flat tooltipped right", title: 'Save as .xls' do
+		= material_icon.md_18.cloud_download.css_class("md-dark")
+	-# = link_to "", class: "btn-tool-right btn-floating btn-flat tooltipped right", title: 'Import File', id: "destination" do
+	-# 	= material_icon.md_18.cloud_upload.css_class("md-dark")
+
+	-# .hide
+	-# 	= form_tag admin_destination_import_path(@objects), id: "import_form_destination", multipart: true, method: :post do
+	-# 		= file_field_tag :file, id: "import_file_destination"
+
+	%table.bordered
+		- unless @objects.blank?
+			%tbody
+				%tr.white-hover{ width: 5 }
+					- if can? :destroy_multiple, Destination
+						%th{style: 'padding-left: 80px'}
+					%th.center{ width: "27%" }= t("activerecord.attributes.banner")
+					%th.center{ width: "45%" }= t("activerecord.attributes.name")
+					%th.center{ width: "75%", colspan: 1 }
+					%th.center{style: "padding:15px 10px"} Hoteles
+					%th.center{style: "padding:15px 10px"} Planes
+					%th.center{style: "padding:15px 10px"} Actividades
+				- @objects.each do |destination|
+					= render 'listing', destination: destination
+		- else
+			%tr
+				%td.center{ colspan: '4' }
+					%center
+						= t('keppler.messages.not_found_records', model:  t("keppler.models.pluralize.destinations"))
+	= paginate @objects, window: 1
+
+.listing-show.col.l3.m12.hide-on-small-and-down.hide-on-med-and-down
+	= render "description"
+
+- if can? :new, model
+	= link_to new_admin_destination_path, class: "btn-index-add btn-floating btn-large waves-effect waves-light" do
+		= material_icon.md_24.add.css_class("md-light")
+
+:javascript
+	$(document).ready(function(){
+		$('.tooltipped').tooltip({delay: 50});
+		$( '.action-btn' ).closeFAB();
+		$('.action-btn.toolbar').closeToolbar();
+		$( '.action-btn' ).hover(
+				function() {
+					$( this ).openFAB();
+					$('.action-btn.toolbar').openToolbar();
+				}, function() {
+					$( this ).closeFAB();
+					$('.action-btn.toolbar').closeToolbar();
+				}
+			);
+		});
+
+	// 	$('#destination').click(function() {
+	// 		$('#import_file_destination').click()
+	// 		$('#import_file_destination').change(function() {
+	// 			$('.waiting').css('display', 'block')
+	// 			$('#import_form_destination').submit()
+	// 		})
+	// })

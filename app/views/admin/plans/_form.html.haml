@@ -1,0 +1,38 @@
+.wrapper
+  .wrapper-body.container
+    .actions
+      = link_to admin_destination_plans_path, class: "btn-floating btn-flat tooltipped", "data-position" => "bottom", "data-tooltip" => t("keppler.actions.back") do
+        = material_icon.md_18.arrow_back.css_class("md-dark")
+    .wrapper-inputs
+      .card
+        .card-content
+          = simple_form_for [:admin, @destination, @plan] do |f|
+            .row
+              .col.s12
+                = f.input :banner, :as => :file_material, label: false, wrapper_html: { class: "file-field" }
+              .col.s6
+                = f.input :title
+              - if !f.object.price.nil?
+                - f.object.price.each do |k,v|
+                  .col.s3
+                    .input-field.col.s12.string.required.plan_prices
+                      %input.validate.string.required{id: "plan_price_#{k}", :name => "plan[price][#{k}]", :type => "text", :value => v}
+                      %label.string.required.control-label{:for => "plan_prices"}= "Price #{k}"
+              - else
+                .col.s3
+                  = f.simple_fields_for(:price) do |pr|
+                    = pr.input :cop, label: t('plans.price.price_cop')
+                .col.s3
+                  = f.simple_fields_for(:price) do |pr|
+                    = pr.input :usd, label: t('plans.price.price_usd')
+              .col.s3
+                = f.input :days
+              .col.s3
+                = f.input :coupon
+              .col.s6
+                = f.input :url
+                = f.hidden_field :destination_id, value: @destination.id
+              .col.s12
+                .form-actions.right
+                  = f.button :submit, t("keppler.actions.save"), name: '_save'
+                  = f.button :submit, t("keppler.actions.save_and_add_another"), name: '_add_other'

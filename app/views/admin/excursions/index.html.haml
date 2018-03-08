@@ -1,0 +1,61 @@
+.listing.col.l9.m12.s12
+	- if can? :new, model
+		= link_to new_admin_destination_excursion_path, class: 'btn-floating btn-large waves-effect waves-light btn-new hide-on-small-only', title: 'New' do
+			= material_icon.md_24.add
+	= entries(@total, @objects)
+	= link_to admin_destinations_path, class: "btn-floating btn-flat tooltipped", "data-position" => "bottom", "data-tooltip" => t("keppler.actions.back") do
+		= material_icon.md_18.arrow_back.css_class("md-dark")
+	= link_to admin_destination_excursions_path(:format => :xls), class: "btn-tool-right btn-floating btn-flat tooltipped right", title: 'Save as .xls' do
+		= material_icon.md_18.cloud_download.css_class("md-dark")
+
+	%table.bordered
+		- unless @objects.blank?
+			%tbody
+				%tr.white-hover{ width: 5 }
+					- if can? :destroy_multiple, Excursion
+						%th{style: 'padding-left: 20px'}
+					%th.center= t("activerecord.attributes.banner")
+					%th.center= t("activerecord.attributes.title")
+					%th.center.hide-on-small-and-down= t("activerecord.attributes.days")
+					%th.center.hide-on-small-and-down= t("activerecord.attributes.url")
+					%th.center.hide-on-small-and-down= t("activerecord.attributes.destination_id")
+					%th.center{ colspan: 4 }
+					-# %tbody#draggable{ 'data-update-url' => "#{sort_admin_destination_excursions_path}" }
+			- @objects.each do |excursion|
+				= render 'listing', excursion: excursion
+		- else
+			%tr
+				%td.center{ colspan: '4' }
+					%center
+						= t('keppler.messages.not_found_records', model:  t("keppler.models.pluralize.excursions"))
+	= paginate @objects, window: 1
+
+.listing-show.col.l3.m12.hide-on-small-and-down.hide-on-med-and-down
+	= render "description"
+
+- if can? :new, model
+	= link_to new_admin_destination_excursion_path, class: "btn-index-add btn-floating btn-large waves-effect waves-light" do
+		= material_icon.md_24.add.css_class("md-light")
+
+:javascript
+	$(document).ready(function(){
+		$('.tooltipped').tooltip({delay: 50});
+		$( '.action-btn' ).closeFAB();
+		$('.action-btn.toolbar').closeToolbar();
+		$( '.action-btn' ).hover(
+			function() {
+				$( this ).openFAB();
+				$('.action-btn.toolbar').openToolbar();
+			}, function() {
+				$( this ).closeFAB();
+				$('.action-btn.toolbar').closeToolbar();
+			}
+		);
+
+		$('#excursion').click(function() {
+			$('#import_file_excursion').click()
+			$('#import_file_excursion').change(function() {
+				$('.waiting').css('display', 'block')
+				$('#import_form_excursion').submit()
+			})
+	})

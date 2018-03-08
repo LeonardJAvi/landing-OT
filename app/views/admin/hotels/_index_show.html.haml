@@ -1,0 +1,41 @@
+.listing-show-header
+	.actions
+		- if can? :update, Hotel
+			= link_to edit_admin_destination_hotel_path(@destination, @hotel), class: "btn-floating waves-effect waves-light btn-flat tooltipped", "data-position" => "bottom", "data-tooltip" => t("keppler.actions.edit") do
+				= material_icon.md_24.create
+	%h5
+		= material_icon.md_24.account_circle.css_class("md-light")
+		= t("keppler.models.singularize.#{controller_name.singularize}")
+.listing-show-body.card{ resize: true , style: "height: {{windowHeight}}px;" }
+	.card-content
+		%center.color-title= @hotel.title.to_s.humanize
+		%center= image_tag @hotel.banner
+		%table.bordered
+			%tbody
+				%tr
+					%th.display-label= t("activerecord.attributes.id")
+					%td.display-value.fs-body-1.tc-black-2= @hotel.id
+				%tr
+					%th.display-label= t("activerecord.attributes.title")
+					%td.display-value.fs-body-1.tc-black-2= @hotel.title.blank? ? '----------' : @hotel.title
+				%tr
+					%th.display-label= t("activerecord.attributes.price")
+					%td.display-value.fs-body-1.tc-black-2
+						= @hotel.price.blank? ? '----------' : "$#{@hotel.price['cop']} COP / $#{@hotel.price['usd']} USD"
+				%tr
+					%th.display-label= t("activerecord.attributes.days")
+					%td.display-value.fs-body-1.tc-black-2= @hotel.days.blank? ? '----------' : @hotel.days
+				%tr
+					%th.display-label= t("activerecord.attributes.url")
+					%td.display-value.fs-body-1.tc-black-2= @hotel.url.blank? ? '----------' : @hotel.url
+				%tr
+					%th.display-label= t("activerecord.attributes.destination_id")
+					%td.display-value.fs-body-1.tc-black-2= @hotel.destination_id.blank? ? '----------' : @hotel.destination_id
+		%table.bordered
+			%tbody
+				%td
+					%center
+						= link_to t('keppler.actions.back_history'), admin_destination_hotels_path
+
+:javascript
+	$('.tooltipped').tooltip({delay: 1});

@@ -1,0 +1,49 @@
+.wrapper
+	.wrapper-body.container
+		.actions
+			- if can? :delete, Plan
+				= link_to admin_destination_plan_path(@destination, @plan), class: "btn-floating btn-flat right tooltipped", "data-position" => "bottom", "data-tooltip" => t("keppler.actions.delete"), method: :delete, data: { confirm: t("keppler.messages.data_confirm") } do
+					= material_icon.md_18.delete.css_class("md-dark")
+			- if can? :update, Plan
+				= link_to edit_admin_destination_plan_path(@destination, @plan), class: "right btn-floating btn-flat tooltipped", "data-position" => "bottom", "data-tooltip" =>t("keppler.actions.edit") do
+					= material_icon.md_18.create.css_class("md-dark")
+			= link_to admin_destination_plans_path, class: "btn-floating btn-flat tooltipped", "data-position" => "bottom", "data-tooltip" => t("keppler.actions.back") do
+				= material_icon.md_18.arrow_back.css_class("md-dark")
+		.card
+			.card-content
+				%center
+					.color-title= @plan.title
+					= image_tag @plan.banner
+				%table.bordered
+					%tbody
+						%tr
+							%th
+								%th.display-label= t("activerecord.attributes.id")
+							%td
+								%td.display-value.fs-body-1.tc-black-2= @plan.id
+						%tr
+							%th
+								%th.display-label= t("activerecord.attributes.title")
+							%td
+								%td.display-value.fs-body-1.tc-black-2= @plan.title.blank? ? '----------' : @plan.title
+						%tr
+							%th
+								%th.display-label= t("activerecord.attributes.price")
+							%td
+								%td.display-value.fs-body-1.tc-black-2
+									= @plan.price.blank? ? '----------' : "$#{@plan.price['cop']} COP / $#{@plan.price['usd']} USD"
+						%tr
+							%th
+								%th.display-label= t("activerecord.attributes.days")
+							%td
+								%td.display-value.fs-body-1.tc-black-2= @plan.days.blank? ? '----------' : @plan.days
+						%tr
+							%th
+								%th.display-label= t("activerecord.attributes.url")
+							%td
+								%td.display-value.fs-body-1.tc-black-2= @plan.url.blank? ? '----------' : @plan.url
+						%tr
+							%th
+								%th.display-label= t("activerecord.attributes.destination_id")
+							%td
+								%td.display-value.fs-body-1.tc-black-2= @plan.destination_id.blank? ? '----------' : @plan.destination_id

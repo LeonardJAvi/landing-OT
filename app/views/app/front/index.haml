@@ -1,0 +1,248 @@
+!!!
+%html{:lang => "en"}
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %meta{:charset => "UTF-8"}/
+    %title Omnitours Colombia - Los mejores hoteles y destinos en Colombia
+    %meta{:content => "IE=edge", "http-equiv" => "X-UA-Compatible"}/
+    %meta{:content => "width=device-width, initial-scale=1, user-scalable=no", :name => "viewport"}/
+    %meta{:content => "Aqui puedes encontrar los mejores precios para viajes hacia cualquier ciudad de Colombia. Incluso con pasajes en avión y noches en hoteles", :name => "description"}/
+    %meta{:content => "viajes, paquetes, bajo costo, USD, pesos, ida y vuelta, pasajes, avión, hoteles, omnitours, colombia", :name => "keywords"}/
+    %meta{:content => "Slice Group & Netactica", :name => "author"}/
+    %link{:href => "assets/img/favicon.ico", :rel => "shortcut icon", :type => "image/x-icon"}/
+    %meta{:content => "#12a655", :name => "theme-color"}/
+    %link{:href => "assets/css/style.min.css", :rel => "stylesheet", :type => "text/css"}/
+  %body
+    %header
+      / <nav class="navbar navbar-default navbar-fixed-top visible-lg visible-md visible-sm">
+      %nav.navbar.navbar-default.navbar-fixed-top.visible-sm.visible-md.visible-lg
+        .container
+          .container-fluid
+            .navbar-header{:style => "right: 80%;"}
+              %button.navbar-toggle.collapsed{"aria-expanded" => "false", "data-target" => "#bs-example-navbar-collapse-1", "data-toggle" => "collapse", :type => "button"}
+                %span.sr-only Toggle navigation
+                %span.icon-bar
+                %span.icon-bar
+                %span.icon-bar
+              %a.navbar-brand{:href => "/"}
+                %img#dnn_dnnLOGO_imgLogo{:alt => "::: OMNI TOURS COLOMBIA ::: Pone a Colombia en sus manos", :src => "assets/img/omnitours.png", :style => ""}/
+            #bs-example-navbar-collapse-1.collapse.navbar-collapse
+              %ul#list-price.nav.navbar-nav
+                %li
+                  %p
+                    %img{:src => "assets/img/ic_telefono.png"}>/
+                    (+571) 756 2614 / 805 6000
+                  %p
+                    %img{:src => "assets/img/ic_whatsapp.png"}>/
+                    (+57) 310 306 1660
+                  %p
+                    %img{:src => "assets/img/ic_skype.png"}>/
+                    OmnitoursColombia
+                %li.dropdown
+                  %a.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#", :role => "button"}
+                    $COP
+                    %span.caret
+                  %ul.dropdown-menu
+                    %li.dropdown-space-link
+                      %a{:href => "https://www.omnitours.com.co/"} COP Peso Colombiano
+                    %li
+                      %a{:href => "https://usd.omnitours.com.co/"} USD Dólar americano
+      / <div class="navbar navbar-inverse navbar-fixed-top hidden-lg hidden-md hidden-sm" role="navigation" id="slide-nav">
+      %nav#slide-nav.navbar.navbar-inverse.navbar-fixed-top.hidden-sm.hidden-md.hidden-lg{:role => "navigation"}
+        .container
+          .navbar-header{:style => "right: 0px;"}
+            %a.navbar-toggle.slide
+              %span.sr-only Toggle navigation
+              %span.icon-bar.icon-bar1
+              %span.icon-bar.icon-bar2
+              %span.icon-bar.icon-bar3
+            %a.navbar-brand{:href => "/"}
+              %img#dnn_dnnLOGO_imgLogo{:alt => "::: OMNI TOURS COLOMBIA ::: Pone a Colombia en sus manos", :src => "assets/img/omnitours.png", :style => ""}/
+          #slidemenu{:style => "right: -999px;"}
+            %ul.nav.navbar-nav
+              %p.text-welcome-navbar Bienvenido
+              .divisor-navbar-text
+              %li
+                %a{:href => "index.html"} Inicio
+              %li{:style => "display: none;"}
+                %a{:href => ""} Destinos
+              %li{:style => "display: none;"}
+                %a{:href => "#"} Planes
+              %li{:style => "display: none;"}
+                %a{:href => "#"} Ofertas
+              %li
+                %a{:href => "https://reservas.omnitours.com.co/NetFulfillment/Login.aspx?UserService=omnitours&ContextApp=CMS&Culture=es-ES", :target => "_blank"} Mis reservas
+              %li.dropdown
+                %a.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#", :role => "button"}
+                  $COP
+                  %span.caret
+                %ul.dropdown-menu
+                  %li
+                    %a{:href => "https://www.omnitours.com.co/"} COP-Peso Colombiano
+                  %li
+                    %a{:href => "https://www.omnitours.com.co/usd"} USD-Dolar Estadounidense
+    %section.content
+      .fix-nav
+      %section.city
+        %section#filter-destinos
+          %h1.title-destino Descubre tu destino ideal en Colombia
+          %ul.portfolioFilter.filter-letter
+            %li
+              %a.current{"data-filter" => "*", :href => "#"} *
+            %li
+              %a{"data-filter" => ".a", :href => "#"} A
+            %li
+              %a{"data-filter" => ".b", :href => "#"} B
+            %li
+              %a{"data-filter" => ".c", :href => "#"} C
+            %li
+              %a{"data-filter" => ".d", :href => "#"} D
+            %li
+              %a{"data-filter" => ".e", :href => "#"} E
+            %li
+              %a{"data-filter" => ".f", :href => "#"} F
+            %li
+              %a{"data-filter" => ".g", :href => "#"} G
+            %li
+              %a{"data-filter" => ".h", :href => "#"} H
+            %li
+              %a{"data-filter" => ".i", :href => "#"} I
+            %li
+              %a{"data-filter" => ".j", :href => "#"} J
+            %li
+              %a{"data-filter" => ".k", :href => "#"} K
+            %li
+              %a{"data-filter" => ".l", :href => "#"} L
+            %li
+              %a{"data-filter" => ".m", :href => "#"} M
+            %li
+              %a{"data-filter" => ".n", :href => "#"} N
+            %li
+              %a{"data-filter" => ".ñ", :href => "#"} Ñ
+            %li
+              %a{"data-filter" => ".o", :href => "#"} O
+            %li
+              %a{"data-filter" => ".p", :href => "#"} P
+            %li
+              %a{"data-filter" => ".q", :href => "#"} Q
+            %li
+              %a{"data-filter" => ".r", :href => "#"} R
+            %li
+              %a{"data-filter" => ".s", :href => "#"} S
+            %li
+              %a{"data-filter" => ".t", :href => "#"} T
+            %li
+              %a{"data-filter" => ".u", :href => "#"} U
+            %li
+              %a{"data-filter" => ".v", :href => "#"} V
+            %li
+              %a{"data-filter" => ".w", :href => "#"} W
+            %li
+              %a{"data-filter" => ".x", :href => "#"} X
+            %li
+              %a{"data-filter" => ".y", :href => "#"} Y
+            %li
+              %a{"data-filter" => ".z", :href => "#"} Z
+        %section#box-images-destinos
+          .container-fluid
+            .row.portfolioContainer
+              - @destinations.each_with_index do |destination,index|
+                .col-xs-12.col-sm-12.col-md-12.col-lg-3{class: destination.filter_letter(destination.name)}
+                  %a{:href => "/destination/#{destination.slug}/cop"}
+                    .box-images
+                      %img.img-responsive{:src => destination.banner}
+                      .mask-box
+                        %span.title-box= destination.name
+    %footer
+      .footer
+        .footer-cuadro
+          .info-omni.container
+            .col-xs-6.col-md-4.col-lg-4.border-info-omni
+              .jquery-plugin-left
+                %a{:href => "", :target => "_blank"}
+                  %p Condiciones de reserva
+                %a{:href => "https://www.omnitours.com.co/Portals/159/Skins/omnitours-redesign/explotacion_sexual_infantil.pdf", :target => "_blank"}
+                  %p Explotación Infantil
+                %a{:href => "https://www.omnitours.com.co/Portals/159/Skins/omnitours-redesign/proteccion_de_datos.pdf", :target => "_blank"}
+                  %p Protección de datos
+                %a{:href => "https://www.omnitours.com.co/Portals/159/Skins/omnitours-redesign/politicas_sostenibilidad.pdf ", :target => "_blank"}
+                  %p Política de sostenibilidad
+                %a{:href => "https://www.omnitours.com.co/Portals/159/Skins/omnitours-redesign/politicas_uso.pdf", :target => "_blank"}
+                  %p Términos de uso
+            .col-xs-12.col-md-4.col-sm-12.col-lg-4.separacion-info-omni
+              %p
+                %span Teléfono
+                (+571) 756 2614 / 805 6000
+              %p
+                %span Whatsapp
+                (+57) 310 306 1660
+              %p
+                %span Skype
+                OmnitoursColombia
+              %p
+                %span Correo
+                info@omnitours.com.co
+              %p Calle 54 A #15-76
+              %p Bogotá D.C. Colombia
+            .col-xs-6.col-md-4.col-lg-4.visible-lg.visible-md.solicitudes-footer
+              %p
+                %span Solicitudes desde colombia
+              %p ventas@omnitours.com.co
+              %p ventas1@omnitours.com.co
+              %br/
+              %p
+                %span Solicitudes fuera de colombia
+              %p comercial2@omnitours.com.co
+          .metodos-pago.row
+            %div
+              %center
+                .col-lg-6.col-md-6.col-xs-12.col-sm-12.border-metodos-omni
+                  .col-lg-12.col-md-12.col-xs-12.col-sm-12
+                    %img.pagos{:src => "assets/img/pagos_omnitours.png"}/
+                .col-lg-6.col-md-6.col-xs-12.col-sm-12.separacion-metodos-omni
+                  .col-lg-12.col-md-12.col-xs-12.col-sm-12
+                    %img.certificados{:src => "assets/img/certificados_onmnitours.png"}/
+          .info-final-omni.container
+            %center
+              %p OMNI TOURS COLOMBIA LTDA RNT - 7873 | Diseño y Desarrollo por
+              %a{:href => "https://www.slicegroup.xyz"} Slice Group
+              %p &amp;
+              %a{:href => "https://www.netactica.com"} Netactica
+    %script{:src => "assets/js/jquery-3.2.1.min.js"}
+    %script{:src => "assets/js/bootstrap.min.js"}
+    %script{:src => "assets/js/main.js"}
+    %script{:src => "assets/js/isotope.pkgd.min.js"}
+    :javascript
+      $(window).on('load', function(){
+          var $container = $('.portfolioContainer');
+          if ($container.length) {
+            $container.isotope({
+                filter: '*',
+                animationOptions: {
+                    duration: 750,
+                    easing: 'linear',
+                    queue: false
+                }
+            });
+            $('.portfolioFilter a').click(function(){
+                $('.portfolioFilter .current').removeClass('current');
+                $(this).addClass('current');
+
+                var selector = $(this).attr('data-filter');
+                $container.isotope({
+                    filter: selector,
+                    animationOptions: {
+                        duration: 750,
+                        easing: 'linear',
+                        queue: false
+                    }
+                 });
+                 return false;
+            });
+          }
+      });
+    %link{:href => "assets/css/omnitours.css", :rel => "stylesheet", :type => "text/css"}/
+    %link{:href => "assets/css/responsive.css", :rel => "stylesheet", :type => "text/css"}/
+/
+  Disculpe, no hemos encontrados actividades según su criterio de búsqueda.
+  No hemos podido encontrar resultados de actividades para lo que esta buscando. Por favor, modifique alguno de los datos o realice una nueva búsqueda.
